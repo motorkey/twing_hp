@@ -1,6 +1,7 @@
 /tmp/*
+/img/*
 .DS_Store
-
+*.swp
 
 ### Node.gitignore ###
 # Logs

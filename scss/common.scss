@@ -1,0 +1,87 @@
+@import "variables";
+@import "mixins";
+
+//
+// common
+//
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// degub
+body {
+  background-color: #99cc66;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  &__image {
+    max-width: 100%;
+  }
+}
+
+.hamburger {
+  border: 1px solid $black;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  @include media-query (mobile) {
+    width: 52px;
+    height: 52px;
+  }
+  &__line {
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    @include media-query (mobile) {
+      width: 26px;
+      height: 3px;
+    }
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: $black;
+    &--top {
+      top: 16px;
+    }
+    &--mid {
+      top: 26px;
+    }
+    &--bot {
+      top: 36px;
+    }
+  }
+}
+
+.topCover {
+  &__images{}
+}
+
+.topCover-image {
+  float: left;
+  width: 33.33333333%;
+  height: 600px;
+  border-radius: 70%;
+  background-position: center 40px;
+  @include media-query (mobile) {
+    clear: both;
+    width: 100%;
+    height: 200px;
+  }
+  &--left {
+    background-image: url("../img/top/topCover/left.png");
+  }
+  &--center {
+    background-image: url("../img/top/topCover/center.png");
+  }
+  &--right {
+    background-image: url("../img/top/topCover/right.png");
+  }
+}

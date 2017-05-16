@@ -1,0 +1,5 @@
+@mixin media-query ($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}
