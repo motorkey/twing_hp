@@ -62,7 +62,12 @@
 }
 
 .topSection {
+  margin-left: 12px;
+  margin-top: 12px;
   &__title {
+    &__inner {
+      font-size: 24px;
+    }
     &__line {
       &--h {
 

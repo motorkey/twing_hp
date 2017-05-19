@@ -62,6 +62,12 @@ body {
   .topCover-image--right {
     background-image: url("../img/top/cover/right.png"); }
 
+.topSection {
+  margin-left: 12px;
+  margin-top: 12px; }
+  .topSection__title__inner {
+    font-size: 24px; }
+
 .topProject__left {
   float: left;
   width: 50%; }
