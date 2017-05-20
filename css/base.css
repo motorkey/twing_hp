@@ -67,6 +67,23 @@ body {
   margin-top: 12px; }
   .topSection__title__inner {
     font-size: 24px; }
+  .topSection__content__news {
+    position: relative;
+    color: #2d8fdd;
+    margin: 50px 150px 50px 50px;
+    background: #f1f8ff;
+    line-height: 1.5;
+    list-style-type: none;
+    transition: 1.0s; }
+    .topSection__content__news--m {
+      border-bottom: solid #F0FFFF;
+      transition: 3.0s; }
+    .topSection__content__news--m:hover {
+      border-left: solid 6px #2d8fdd; }
+  .topSection_news {
+    padding: 10px;
+    position: relative;
+    background-color: #F0FFFF; }
 
 .topProject__left {
   float: left;
