@@ -11,6 +11,7 @@
     width: 52px;
     height: 52px;
   }
+
   &__line {
     position: absolute;
     width: 45px;
@@ -78,10 +79,11 @@
     }
   }
 
-    &--news{
+    &--NEWS{
       background: #F0FFFF;
       width: 100%;
       height: 250px;
+      overflow:auto;
       }
   &__content {
     &__news{
@@ -95,16 +97,18 @@
         height: 40px;
         margin-left: 10%;
         background: #f1f8ff;
-        transition: 2.5s;
+        transition: 0.3s;
         list-style-type: none;
         border-left: solid  #F0FFFF;
           &--link{
             vertical-align: middle;
             &--date{
               text-decoration: underline #f1f8ff;
+              vertical-align: middle;
               }
             &--title{
               text-decoration: underline #f1f8ff;
+              vertical-align: middle;
               }
             }
           &:hover{
