@@ -77,41 +77,48 @@
       }
     }
   }
-  &__content {
 
-
-
-
-
-    &__news{
-      position: relative;
-      color: #2d8fdd;
+    &--news{
+      background: #F0FFFF;
       width: 100%;
-      height: auto;
-      margin: 50px 150px 50px 50px;
-      background: #f1f8ff;
- 	    line-height: 1.5;
-      list-style-type: none;
-      transition: 1.0s;
-
-      &--m
-        position: absolute;
-        border-bottom: solid #F0FFFF;
-        transition: 3.0s;
-        }
-
-      &--m:hover{
-        border-left: solid 6px #2d8fdd;
-        padding-left: 10px;
-        }
+      height: 250px;
       }
-  }
-  &_news {
-
-    padding: 10px;
-    position: relative;
-    background-color: #F0FFFF;
-
+  &__content {
+    &__news{
+      padding-top: 20px;
+      width: 100%;
+      &__list{
+        width: 80%;
+        line-height: 1.5;
+        margin: 5px;
+        font-size: 50%;
+        height: 40px;
+        margin-left: 10%;
+        background: #f1f8ff;
+        transition: 2.5s;
+        list-style-type: none;
+        border-left: solid  #F0FFFF;
+          &--link{
+            vertical-align: middle;
+            &--date{
+              text-decoration: underline #f1f8ff;
+              }
+            &--title{
+              text-decoration: underline #f1f8ff;
+              }
+            }
+          &:hover{
+            border-left: solid  #2d8fdd;
+            }
+          }
+      &--bottom{
+        float: right;
+        position: relative;
+        right: 10%;
+        border-bottom: solid 2px;
+        font-size: 0.2rem;
+        }
+    }
   }
 }
 
