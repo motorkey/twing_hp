@@ -3,3 +3,15 @@
     @content;
   }
 }
+@mixin vertical-align-center-inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@mixin horizontal-align-center-inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}

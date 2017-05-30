@@ -10,17 +10,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/initialize.css">
 <link rel="stylesheet" href="css/base.css">
-<script type="text/javascript" src="node_modeles/jquery/dist/jquery.min.js"></script>
+<link rel="icon" href="img/favicon.ico">
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
 </head>
 
 <body class="top">
 
 <header class="topHeader">
-  <div class="topHeader__logo logo">
-    <img class="logo__image" src="img/logo.png" alt="logo">
+  <div class="topHeader__logo">
+    <img class="topHeader__logo__image" src="
+    img/logo.png" alt="logo">
   </div>
   <nav>
-    <div class="hamburger">
+    <div class="topHeader__hamgurger hamburger">
       <span class="hamburger__line hamburger__line--top"></span>
       <span class="hamburger__line hamburger__line--mid"></span>
       <span class="hamburger__line hamburger__line--bot"></span>
@@ -34,18 +37,33 @@
 </header>
 
 <div class="topCover">
-  <div class="topCover__eyecatch topCover-eyecatch">
-    <h1 class="topCover-eyecatch__title">日本の就活を変える</h1>
+  <div class="topCover__eyecatch">
+    <h1 class="topCover__eyecatch__title">日本の就活を変える</h1>
   </div>
-  <section class="topCover__image-list clearfix"><!-- clearfixあってる？ -->
+  <section class="topCover__image-list clearfix">
     <div class="topCover-image topCover-image--left">
-
+      <div class="topCover-image__filter--left"></div>
+      <div class="topCover-image__outer-circle topCover-image__outer-circle--left">
+        <div class="topCover-image__outer-circle__inner-circle">
+          <span>ビジョナリー・カンバニーにスポットライトを</span>
+        </div>
+      </div>
     </div>
     <div class="topCover-image topCover-image--center">
-
+      <div class="topCover-image__outer-circle topCover-image__outer-circle--center">
+        <div class="topCover-image__outer-circle__inner-circle">
+          <span>君にしかない道を</span>
+          <span>見つけていく</span>
+        </div>
+      </div>
     </div>
     <div class="topCover-image topCover-image--right">
-
+      <div class="topCover-image__outer-circle topCover-image__outer-circle--right">
+        <div class="topCover-image__outer-circle__inner-circle">
+          <span>これまでにない</span>
+          <span>学生サポートを</span>
+        </div>
+      </div>
     </div>
   </section>
 </div>
@@ -53,19 +71,22 @@
 <section class="topSection">
   <div class="topSection__title">
     <h2 class="topSection__title__inner">PROJECTS</h2>
-    <span class="topSection__title__line topSection__title__line--h"></span>
-    <span class="topSection__title__line topSection__title__line--v"></span>
+    <div class="topSection__title__horizontal-line horizontal-line">
+      <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
+    </div>
   </div>
-  <div class="topSection__content">
+  <!--<div class="topSection__vertical-line"></div>-->
+  <section class="topSection__content">
     <article class="topProject clearfix">
       <div class="topProject__left">
         <img class="topProject__left__image" src="img/top/project/project-1.png" alt="Project Image">
       </div>
       <div class="topProject__right">
-        <h1 class="topProject__right__number">1</h1>
-        <h3 class="topProject__right__title">TRYOUT就活</h3>
+        <h3 class="topProject__right__number"><span style="font-size: 30px;">1</span><span style="font-size: 15px">TRYOUT就活</span></h3>
+        <!--<h3 class="topProject__right__number">1</h3>
+        <h3 class="topProject__right__title">TRYOUT就活</h3>-->
         <div class="topProject__right__desc">
-          <span >100名超の規模で実施する「1日完結型選考チャレンジ」</span><span>グループディスカッションから面接までトライアウト形式で就活を実践！学生自身のレベルによって、進むルートが多数存在し、【真剣勝負×完全点数化】だからこそ、現時点でのレベルが丸わかり。”本物の選考”を学内で実施します。</span>
+          <span class="topProject__right__desc__inner">100名超の規模で実施する「1日完結型選考チャレンジ」</span><span class="topProject__right__desc__inner">グループディスカッションから面接までトライアウト形式で就活を実践！学生自身のレベルによって、進むルートが多数存在し、【真剣勝負×完全点数化】だからこそ、現時点でのレベルが丸わかり。”本物の選考”を学内で実施します。</span>
         </div>
       </div>
     </article>
@@ -106,37 +127,82 @@
       </div>
 
     </article>
-  </div>
+  </section>
 </section>
 
 <section class="topSection">
-  <div class="topSection__title">
+  <div class="topSection__title clearfix">
     <h2 class="topSection__title__inner">NEWS</h2>
-    <span class="topSection__title__line topSection__title__line--h"></span>
-    <span class="topSection__title__line topSection__title__line--v"></span>
+    <div class="topSection__title__horizontal-line horizontal-line">
+      <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
+    </div>
   </div>
-  <div class="topSection__content">
-
-  </div>
+  <!--<span class="topSection__title__line topSection__title__line--v"></span>-->
+  <section class="topSection__content topNews clearfix">
+    <article class="topNews__article clearfix js-topNews-hover-animation">
+      <time class="topNews__article__date" datetime="2017-5-29" pubdate="pubdate">2017年5月29日</time>
+      <h3 class="topNews__article__title">最新のニュースのタイトル</h3>
+    </article>
+    <article class="topNews__article clearfix">
+      <time class="topNews__article__date" datetime="2017-5-30" pubdate="pubdate">2017年5月30日</time>
+      <h3 class="topNews__article__title">2番目のニュースのタイトル</h3>
+    </article>
+    <article class="topNews__article clearfix">
+      <time class="topNews__article__date" datetime="2017-5-31" pubdate="pubdate">2017年5月31日</time>
+      <h3 class="topNews__article__title">3番目のニュースのタイトル</h3>
+    </article>
+    <div class="topNews__all-news">
+      <a class="topNews__all-news__link" href="news.html">全てのニュースを見る</a>
+    </div>
+  </section>
 </section>
 
 <section class="topSection">
-  <div class="topSection__title">
+  <div class="topSection__title clearfix">
     <h2 class="topSection__title__inner">PEOPLE</h2>
-    <span class="topSection__title__line topSection__title__line--h"></span>
-    <span class="topSection__title__line topSection__title__line--v"></span>
+    <div class="topSection__title__horizontal-line horizontal-line">
+      <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
+    </div>
   </div>
-  <div class="topSection__content">
-
+  <!--<span class="topSection__title__line topSection__title__line--v"></span>-->
+  <section class="topSection__content topPeople clearfix">
+    <article class="topPeople__person">
+      <p class="topPeople__person__slogan">一人ずつキャッチコピーをここに入れる</p>
+      <h3 class="topPeople__person__name">井川 皓貴</h3>
+      <img class="topPeople__person__image" src="img/top/people/person-1.png" alt="Person Image">
+    </article>
+    <article class="topPeople__person">
+      <p class="topPeople__person__slogan">一人ずつキャッチコピーをここに入れる</p>
+      <h3 class="topPeople__person__name">井川 皓貴</h3>
+      <img class="topPeople__person__image" src="img/top/people/person-1.png" alt="Person Image">
+    </article>
+    <article class="topPeople__person">
+      <p class="topPeople__person__slogan">一人ずつキャッチコピーをここに入れる</p>
+      <h3 class="topPeople__person__name">井川 皓貴</h3>
+      <img class="topPeople__person__image" src="img/top/people/person-1.png" alt="Person Image">
+    </article>
+    <article class="topPeople__person">
+      <p class="topPeople__person__slogan">一人ずつキャッチコピーをここに入れる</p>
+      <h3 class="topPeople__person__name">井川 皓貴</h3>
+      <img class="topPeople__person__image" src="img/top/people/person-1.png" alt="Person Image">
+    </article>
+  </section>
+  <div class="scroll-to-top">
+    <a class="scroll-to-top__inner" href="#top">ページの先頭へ戻る</a>
   </div>
 </section>
-
-<div class="to-top">
-  <a href="#top">ページの先頭へ戻る</a>
-</div>
 
 <footer class="footer">
-
+  <div class="footer__logo">
+    <img src="" alt="">
+  </div>
+  <ul class="footer__gnavs">
+    <li></li>
+    <li></li>
+  </ul>
+  <div class="footer__copyright">
+    <span>© 2017 Anivia Works</span>
+  </div>
 </footer>
 
 </body>
