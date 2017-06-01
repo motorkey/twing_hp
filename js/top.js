@@ -4,6 +4,7 @@ $(function() {
   $topSectionTitleHorizontalLine = $('.topSection__title__horizontal-line');
   $topSectionTitleHorizontalLine.css('margin-top', $topSectionTitle.height() / 2);
 
+
   // topSectionTitleHorizontalLineのslide-in
   /*$('.js-topSection-title-line-h-slide-in').click(function() {$(this).fadeOut('slow');});
   var $window = $(window);
@@ -25,5 +26,13 @@ console.log($topProjectLeftNegativeMargin);
   // topNewsのホバーアニメーション
   $('.js-topNews-hover-animation').on('hover', function(){
     // transitionで！！！
+  });
+
+  // hamburger
+  $(".hamburger").on("click", ()=> {
+      $(".topHeader__hamburger__menu").slideToggle(300);
+      $(this).toggleClass("active");
+      $(".hamburger__open").toggle();
+      $(".hamburger__close").toggle();
   });
 });
