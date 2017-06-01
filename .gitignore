@@ -1,6 +1,7 @@
 /tmp/*
 .DS_Store
 *.swp
+/sample/*
 
 ### Node.gitignore ###
 # Logs

@@ -98,11 +98,11 @@ body {
       width: 100%;
       height: 300px; } }
   .topCover-image--left {
-    background-image: url("../img/top/cover/left-2.png"); }
+    background-image: url("../img/top/cover/left.png"); }
   .topCover-image--center {
-    background-image: url("../img/top/cover/center-2.png"); }
+    background-image: url("../img/top/cover/center.png"); }
   .topCover-image--right {
-    background-image: url("../img/top/cover/right-2.png"); }
+    background-image: url("../img/top/cover/right.png"); }
   .topCover-image__filter--left {
     position: absolute;
     width: 100%;
