@@ -40,6 +40,7 @@ body {
     top: 54px;
     right: 0;
     left: 0;
+    z-index: 1001;
     background-color: #0e1f3c;
     color: #e0ffff; }
     .topHeader__hamburger__menu .gnavs__item {
@@ -60,8 +61,7 @@ body {
   @media screen and (max-width: 640px) {
     .hamburger {
       width: 52px;
-      height: 52px;
-      right: 18px; } }
+      height: 52px; } }
   .hamburger__line {
     position: absolute;
     width: 45px;
@@ -80,11 +80,10 @@ body {
       top: 26px; }
     .hamburger__line--bot {
       top: 36px; }
-
-.hamburger__close {
-  display: none; }
-  .hamburger__close .hamburger__close__icon {
-    font-size: 2.5rem; }
+  .hamburger__close {
+    display: none; }
+    .hamburger__close__icon {
+      font-size: 2.5rem; }
 
 .topCover {
   position: relative;
@@ -310,16 +309,16 @@ body {
       .footer__left {
         border: none;
         width: 100%; } }
-    .footer__left .footer__logo {
-      text-align: right;
-      padding-right: 60px;
-      margin-top: 25px; }
-      @media screen and (max-width: 640px) {
-        .footer__left .footer__logo {
-          text-align: center;
-          margin-top: 15px; } }
-      .footer__left .footer__logo .footer__logo__image {
-        height: 25px; }
+  .footer__logo {
+    text-align: right;
+    padding-right: 60px;
+    margin-top: 25px; }
+    @media screen and (max-width: 640px) {
+      .footer__logo {
+        text-align: center;
+        margin-top: 15px; } }
+    .footer__logo .footer__logo__image {
+      height: 25px; }
   .footer__right {
     display: inline-block;
     vertical-align: top;
