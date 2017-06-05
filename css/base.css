@@ -317,7 +317,7 @@ body {
       .footer__logo {
         text-align: center;
         margin-top: 15px; } }
-    .footer__logo .footer__logo__image {
+    .footer__logo__image {
       height: 25px; }
   .footer__right {
     display: inline-block;
