@@ -32,7 +32,7 @@ console.log($topProjectLeftNegativeMargin);
   $(".hamburger").on("click", ()=> {
       $(".topHeader__hamburger__menu").slideToggle(300);
       $(this).toggleClass("active");
-      $(".hamburger__open").toggle();
-      $(".hamburger__close").toggle();
+      $(".hamburger--open").toggle();
+      $(".hamburger--close").toggle();
   });
 });

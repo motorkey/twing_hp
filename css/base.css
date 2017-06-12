@@ -37,12 +37,14 @@ body {
   .topHeader__hamburger__menu {
     display: none;
     position: fixed;
-    top: 54px;
     right: 0;
     left: 0;
     z-index: 1001;
     background-color: #0e1f3c;
     color: #e0ffff; }
+    @media screen and (max-width: 640px) {
+      .topHeader__hamburger__menu {
+        top: 54px; } }
     .topHeader__hamburger__menu .gnavs__item {
       height: 40px;
       font-size: 20px;
@@ -75,15 +77,36 @@ body {
         width: 26px;
         height: 3px; } }
     .hamburger__line--top {
-      top: 16px; }
+      top: 22px; }
+      @media screen and (max-width: 640px) {
+        .hamburger__line--top {
+          top: 16px; } }
     .hamburger__line--mid {
-      top: 26px; }
+      top: 38px; }
+      @media screen and (max-width: 640px) {
+        .hamburger__line--mid {
+          top: 26px; } }
     .hamburger__line--bot {
-      top: 36px; }
+      top: 54px; }
+      @media screen and (max-width: 640px) {
+        .hamburger__line--bot {
+          top: 36px; } }
   .hamburger--close {
     display: none; }
     .hamburger--close__icon {
-      font-size: 2.5rem; }
+      font-size: 4.5rem;
+      position: relative; }
+      @media screen and (max-width: 640px) {
+        .hamburger--close__icon {
+          font-size: 2.5rem; } }
+      .hamburger--close__icon__aaa {
+        position: absolute;
+        top: 8px;
+        left: 16px; }
+        @media screen and (max-width: 640px) {
+          .hamburger--close__icon__aaa {
+            top: 5px;
+            left: 10px; } }
 
 .topCover {
   position: relative;
