@@ -80,9 +80,9 @@ body {
       top: 26px; }
     .hamburger__line--bot {
       top: 36px; }
-  .hamburger__close {
+  .hamburger--close {
     display: none; }
-    .hamburger__close__icon {
+    .hamburger--close__icon {
       font-size: 2.5rem; }
 
 .topCover {
