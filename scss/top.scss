@@ -27,10 +27,12 @@
   &__hamburger__menu {
     display: none;
     position: fixed;
-    top: 54px;
     right: 0;
     left: 0;
     z-index: 1001;
+    @include media-query (mobile) {
+      top: 54px;
+    }
     background-color: $sub-theme-color;
     color: $main-theme-color;
     .gnavs {
@@ -70,19 +72,41 @@
     margin: auto;
     background-color: $black;
     &--top {
-      top: 16px;
+      top: 22px;
+      @include media-query (mobile) {
+        top: 16px;
+      }
     }
     &--mid {
-      top: 26px;
+      top: 38px;
+      @include media-query (mobile) {
+        top: 26px;
+      }
     }
     &--bot {
-      top: 36px;
+      top: 54px;
+      @include media-query (mobile) {
+        top: 36px;
+      }
     }
   }
   &--close {
     display: none;
     &__icon {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
+      position: relative;
+      @include media-query (mobile) {
+        font-size: 2.5rem;
+      }
+      &__aaa {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        @include media-query (mobile) {
+          top: 5px;
+          left: 10px;
+        }
+      }
     }
   }
 }
