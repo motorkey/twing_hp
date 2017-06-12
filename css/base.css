@@ -299,14 +299,14 @@ body {
   @media screen and (max-width: 640px) {
     .footer {
       height: 60px; } }
-  .footer__left {
+  .footer--left {
     display: inline-block;
     width: 45%;
     height: 100%;
     border-right: 1px solid gray;
     vertical-align: top; }
     @media screen and (max-width: 640px) {
-      .footer__left {
+      .footer--left {
         border: none;
         width: 100%; } }
   .footer__logo {
@@ -319,28 +319,26 @@ body {
         margin-top: 15px; } }
     .footer__logo__image {
       height: 25px; }
-  .footer__right {
+  .footer--right {
     display: inline-block;
     vertical-align: top;
     width: 45%; }
     @media screen and (max-width: 640px) {
-      .footer__right {
+      .footer--right {
         display: none; } }
-    .footer__right .footer__gnavs__left {
-      display: inline-block;
-      vertical-align: top;
-      font-size: 0.3rem;
-      padding-left: 30px;
-      margin-right: 40px; }
-      .footer__right .footer__gnavs__left .footer__gnavs__item {
-        padding: 0.2rem; }
-    .footer__right .footer__gnavs__right {
-      display: inline-block;
-      vertical-align: top;
-      width: 40%;
-      font-size: 0.3rem; }
-      .footer__right .footer__gnavs__right .footer__gnavs__item {
-        padding: 0.2rem; }
   .footer__copyright {
     font-size: 0.4rem;
     opacity: 0.5; }
+  .footer__gnavs--left {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.3rem;
+    padding-left: 30px;
+    margin-right: 40px; }
+  .footer__gnavs--right {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    font-size: 0.3rem; }
+  .footer__gnavs__item {
+    padding: 0.2rem; }
