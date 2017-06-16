@@ -52,7 +52,6 @@ body {
       padding: 10px; }
 
 .hamburger {
-  border: 1px solid #0e1f3c;
   position: fixed;
   z-index: 1001;
   top: 0;
@@ -99,14 +98,14 @@ body {
       @media screen and (max-width: 640px) {
         .hamburger--close__icon {
           font-size: 2.5rem; } }
-      .hamburger--close__icon__aaa {
+      .hamburger--close__icon__image {
         position: absolute;
-        top: 8px;
-        left: 16px; }
+        top: 3px;
+        left: 18px; }
         @media screen and (max-width: 640px) {
-          .hamburger--close__icon__aaa {
-            top: 5px;
-            left: 10px; } }
+          .hamburger--close__icon__image {
+            top: 6px;
+            left: 12px; } }
 
 .topCover {
   position: relative;
