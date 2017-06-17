@@ -1,7 +1,21 @@
 $(function() {
+
+  //
+  var breakpoint = 640;
+
+  // topCover-imageの中の文字をPCとSPで変える
+  $(window).resize(function(){
+    var windowWidth = $(window).width();
+    if (windowWidth <= breakpoint) {
+        $('.js-topCover-change-inner').html('<span>企業の方へ</span>');
+    } else {
+        //    
+    }
+  });
+
   // topSectionTitleHorizontalLineを縦中心に配置
-  $topSectionTitle = $('.topSection__title');
-  $topSectionTitleHorizontalLine = $('.topSection__title__horizontal-line');
+  var $topSectionTitle = $('.topSection__title');
+  var $topSectionTitleHorizontalLine = $('.topSection__title__horizontal-line');
   $topSectionTitleHorizontalLine.css('margin-top', $topSectionTitle.height() / 2);
 
   // topSectionTitleHorizontalLineのslide-in
