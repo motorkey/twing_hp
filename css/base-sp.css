@@ -15,15 +15,15 @@ body {
 .topHeader {
   position: absolute;
   top: 0;
-  height: 90px;
+  height: 52px;
   z-index: 1; }
   .topHeader__logo {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    padding-left: 60px;
-    padding-top: 16px;
-    padding-bottom: 16px; }
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px; }
     .topHeader__logo__image {
       max-height: 100%; }
   .topHeader__hamburger__menu {
@@ -31,6 +31,7 @@ body {
     position: fixed;
     right: 0;
     left: 0;
+    top: 54px;
     z-index: 1001;
     background-color: #0e1f3c;
     color: #e0ffff; }
@@ -45,32 +46,32 @@ body {
   z-index: 1001;
   top: 0;
   right: 0;
-  width: 90px;
-  height: 90px;
+  width: 52px;
+  height: 52px;
   cursor: pointer; }
   .hamburger__line {
     position: absolute;
-    width: 45px;
-    height: 5px;
+    width: 26px;
+    height: 3px;
     right: 0;
     left: 0;
     margin: auto;
     background-color: #000; }
     .hamburger__line--top {
-      top: 22px; }
+      top: 16px; }
     .hamburger__line--mid {
-      top: 38px; }
+      top: 26px; }
     .hamburger__line--bot {
-      top: 54px; }
+      top: 36px; }
   .hamburger--close {
     display: none; }
     .hamburger--close__icon {
-      font-size: 4.5rem;
+      font-size: 2.5rem;
       position: relative; }
       .hamburger--close__icon__image {
         position: absolute;
-        top: 3px;
-        left: 18px; }
+        top: 6px;
+        left: 12px; }
 
 .topCover {
   position: relative;
@@ -87,13 +88,14 @@ body {
       display: flex;
       -webkit-justify-content: center;
       justify-content: center;
-      font-size: 55px; }
+      font-size: 38px; }
 
 .topCover-image {
   position: relative;
   float: left;
-  width: 33.33333333%;
-  height: 100vh; }
+  width: 100%;
+  height: 300px;
+  clear: both; }
   .topCover-image--left {
     background-image: url("../img/top/cover/left-2.png"); }
   .topCover-image--center {
@@ -166,8 +168,8 @@ body {
       border-top: 1px solid #000; }
   .topSection__content {
     border-left: 1px solid #000;
-    margin-left: 8px;
-    margin-right: 8px; }
+    margin-left: 0;
+    margin-right: 0; }
 
 .topProject {
   padding-left: 68px; }
@@ -198,7 +200,7 @@ body {
       height: auto; }
 
 .topNews {
-  padding: 25px 50px 60px 45px; }
+  padding: 25px 0 30px 0; }
   .topNews__article {
     display: -webkit-flex;
     display: flex;
@@ -228,11 +230,12 @@ body {
       text-decoration: none !important; }
 
 .topPeople {
-  padding: 25px 100px 60px 100px; }
+  padding: 25px 0 30px 0; }
   .topPeople__person {
     float: left;
-    width: 50%;
-    position: relative; }
+    position: relative;
+    clear: both;
+    width: 100%; }
     .topPeople__person__slogan {
       position: absolute;
       top: 20px;
@@ -259,24 +262,22 @@ body {
 .footer {
   background-color: #0e1f3c;
   color: #e0ffff;
-  height: 100px;
+  height: 60px;
   padding: 30px; }
   .footer--left {
     display: inline-block;
-    width: 45%;
+    width: 100%;
     height: 100%;
-    border-right: 1px solid gray;
+    border-right: none;
     vertical-align: top; }
   .footer__logo {
-    text-align: right;
     padding-right: 60px;
-    margin-top: 25px; }
+    text-align: center;
+    margin-top: 15px; }
     .footer__logo__image {
       height: 25px; }
   .footer--right {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; }
+    display: none; }
   .footer__copyright {
     font-size: 0.4rem;
     opacity: 0.5; }
@@ -293,3 +294,5 @@ body {
     font-size: 0.3rem; }
   .footer__gnavs__item {
     padding: 0.2rem; }
+
+/*# sourceMappingURL=base-sp.css.map */
