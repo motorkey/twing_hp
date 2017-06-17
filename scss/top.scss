@@ -1,6 +1,4 @@
 .topHeader {
-  position: absolute;
-  top: 0;
   height: 90px;
   z-index: 1;
   @include media-query(mobile) {

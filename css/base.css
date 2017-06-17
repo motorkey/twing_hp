@@ -16,8 +16,6 @@ body {
     max-width: 100%; }
 
 .topHeader {
-  position: absolute;
-  top: 0;
   height: 90px;
   z-index: 1; }
   @media screen and (max-width: 640px) {
