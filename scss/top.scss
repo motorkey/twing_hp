@@ -22,11 +22,31 @@
       max-height: 100%;
     }
   }
-  &__hamburger {}
+  &__hamburger {
+  }
+  &__hamburger__menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1001;
+    @include media-query (mobile) {
+      top: 54px;
+    }
+    background-color: $sub-theme-color;
+    color: $main-theme-color;
+    .gnavs {
+      &__item {
+        height: 40px;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+      }
+    }
+  }
 }
 
 .hamburger {
-  border: 1px solid $sub-theme-color;
   position: fixed;
   z-index: 1001;
   top: 0;
@@ -51,13 +71,41 @@
     margin: auto;
     background-color: $black;
     &--top {
-      top: 16px;
+      top: 22px;
+      @include media-query (mobile) {
+        top: 16px;
+      }
     }
     &--mid {
-      top: 26px;
+      top: 38px;
+      @include media-query (mobile) {
+        top: 26px;
+      }
     }
     &--bot {
-      top: 36px;
+      top: 54px;
+      @include media-query (mobile) {
+        top: 36px;
+      }
+    }
+  }
+  &--close {
+    display: none;
+    &__icon {
+      font-size: 4.5rem;
+      position: relative;
+      @include media-query (mobile) {
+        font-size: 2.5rem;
+      }
+      &__image {
+        position: absolute;
+        top: 3px;
+        left: 18px;
+        @include media-query (mobile) {
+          top: 6px;
+          left: 12px;
+        }
+      }
     }
   }
 }
@@ -384,13 +432,62 @@
 .footer {
   background-color: $sub-theme-color;
   color: $main-theme-color;
-  &__logo {
-
+  height: 100px;
+  padding: 30px;
+  @include media-query(mobile) {
+    height: 60px;
   }
-  &__gnavs {
-
+  &--left {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid gray;
+    vertical-align: top;
+    @include media-query (mobile) {
+      border: none;
+      width: 100%;
+    }
+  }
+  &__logo {
+    text-align: right;
+    padding-right: 60px;
+    margin-top: 25px;
+    @include media-query(mobile) {
+      text-align: center;
+      margin-top: 15px;
+    }
+    &__image {
+      height: 25px;
+    }
+  }
+  &--right {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    @include media-query(mobile) {
+      display: none;
+    }
   }
   &__copyright {
-
+  font-size: 0.4rem;
+  opacity: 0.5;
+  }
+  &__gnavs {
+    &--left {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.3rem;
+      padding-left: 30px;
+      margin-right: 40px;
+    }
+    &--right {
+      display: inline-block;
+      vertical-align: top;
+      width: 40%;
+      font-size: 0.3rem;
+    }
+    &__item {
+      padding: 0.2rem;
+    }
   }
 }
