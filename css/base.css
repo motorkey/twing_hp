@@ -307,12 +307,12 @@ body {
     width: 50%; }
     @media screen and (max-width: 640px) {
       .topProject__desc {
-        width: 60vw;
-        padding: 0 20px; } }
+        width: 65vw;
+        padding-left: 8vw; } }
     .topProject__desc--left {
       float: left; }
     .topProject__desc--number-size {
-      font-size: 10vw; }
+      font-size: 12vw; }
     .topProject__desc--eyecatch-size {
       font-size: 5vw; }
   .topProject__left {
@@ -338,8 +338,8 @@ body {
       .topProject__right {
         transform: none;
         float: left;
-        width: 60vw;
-        padding: 0 20px; } }
+        width: 65vw;
+        padding-left: 8vw; } }
     .topProject__right__number {
       transform: skewX(-30deg); }
   .topProject--reversed__left {
@@ -348,7 +348,8 @@ body {
     @media screen and (max-width: 640px) {
       .topProject--reversed__left {
         float: right;
-        width: 60vw; } }
+        width: 65vw;
+        margin-right: 3vw; } }
   .topProject--reversed__right {
     margin-left: -101px;
     margin-top: 40px;
@@ -358,7 +359,7 @@ body {
       .topProject--reversed__right {
         margin-left: 0;
         margin-top: 0;
-        float: 0;
+        float: none;
         width: 20vw;
         height: 60vh;
         border: 1px solid black; } }
