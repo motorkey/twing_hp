@@ -477,13 +477,6 @@
   }
 }
 
-
-.topSection__news-title--sp {
-  @include media-query(mobile) {
-
-  }
-}
-
 .topPeople {
   padding: 25px 100px 60px 100px;
   @include media-query(mobile) {
