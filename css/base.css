@@ -149,7 +149,7 @@ body {
   @media screen and (max-width: 640px) {
     .topCover__image-list {
       padding-top: 140px;
-      margin-bottom: 80px; } }
+      margin-bottom: 50px; } }
 
 .topCover-image {
   position: relative;
@@ -239,7 +239,7 @@ body {
     .topSection {
       padding-left: 0;
       padding-right: 0;
-      padding-top: 5vh; } }
+      padding-top: 10vh; } }
   .topSection__title {
     display: -webkit-flex;
     display: flex; }
@@ -370,7 +370,7 @@ body {
   padding: 25px 50px 60px 45px; }
   @media screen and (max-width: 640px) {
     .topNews {
-      padding: 25px 0 30px 0; } }
+      padding: 25px 0 0 0; } }
   .topNews__article {
     display: -webkit-flex;
     display: flex;
@@ -444,7 +444,8 @@ body {
       @media screen and (max-width: 640px) {
         .topPeople__person__image {
           width: 100%;
-          max-height: 40vh; } }
+          max-height: 40vh;
+          margin-top: 0.5vh; } }
 
 .scroll-to-top {
   width: 100%;
