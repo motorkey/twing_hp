@@ -15,6 +15,7 @@
       padding-left: 20px;
       padding-top: 12px;
       padding-bottom: 12px;
+      background-color: white;
     }
     &__image {
       max-height: 100%;
@@ -25,8 +26,8 @@
   &__hamburger__menu {
     display: none;
     position: fixed;
-    right: 0;
-    left: 0;
+    right: 2vw;
+    left: 2vw;
     z-index: 1001;
     @include media-query (mobile) {
       top: 54px;
@@ -48,7 +49,7 @@
   position: fixed;
   z-index: 1001;
   top: 0;
-  right: 0;
+  right: 2vw;
   width: 90px;
   height: 90px;
   cursor: pointer;
@@ -258,7 +259,13 @@
     text-align: right;
     position: absolute;
     right: 2vw;
-
+    margin-top: 0 !important;
+    padding-top: 1.5vh;
+  }
+  &__under-text {
+    padding-left: $top-section-padding;
+    font-size: 0.7em;
+    margin-top: -5px;
   }
 }
   /*&__vertical-line {
@@ -283,7 +290,7 @@
   padding-left: $top-project-padding;
   @include media-query(mobile) {
     padding-left: 0;
-    padding-bottom: 20px;
+    padding-top: 10px;
   }
   &__photo {
     float: left;
@@ -294,7 +301,7 @@
       margin-left: 0;
       margin-top: 0;
       border: 1px solid black;
-      width: 25vw;
+      width: 20vw;
       height: 60vh;
     }
     &--right {
@@ -314,16 +321,16 @@
     }
     &--left {
       float: left;
-
-    }
-    &__number {
-
     }
     &__title {
-
     }
     &__text {
-
+    }
+    &--number-size {
+      font-size: 10vw;
+    }
+    &--eyecatch-size {
+      font-size: 5vw;
     }
   }
   &__left {
@@ -334,7 +341,7 @@
     @include media-query(mobile) {
       margin-left: 0;
       border: 1px solid black;
-      width: 25vw;
+      width: 20vw;
       height: 60vh;
       margin-top: 0;
     }
@@ -394,7 +401,7 @@
         margin-left: 0;
         margin-top: 0;
         float: 0;
-        width: 25vw;
+        width: 20vw;
         height: 60vh;
         border: 1px solid black;
       }
@@ -423,7 +430,8 @@
     @include media-query(mobile) {
       border-bottom: none;
       border-top: 2px solid black;
-      height: 10vh
+      height: 10vh;
+      background-color: white;
     }
     &:hover {
       border-left: 4px solid #73b4d2;
@@ -451,14 +459,22 @@
   }
   @include media-query(mobile) {
     &__all-news--sp {
-      text-align: right;
       font-size: 12px;
       border: 2px solid $sub-theme-color;
-      &__link--sp {
-        color: $black !important;
-        text-decoration: none !important;
-      }
+      padding: 1.5vh 4vw;
+      background-color: $sub-theme-color;
     }
+    &__all-news__link--sp {
+      color: white !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+
+.topSection__news-title--sp {
+  @include media-query(mobile) {
+
   }
 }
 
@@ -535,6 +551,7 @@
     @include media-query(mobile) {
       text-align: center;
       margin-top: 15px;
+      padding-right: 0;
     }
     &__image {
       height: 25px;
