@@ -12,12 +12,11 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="icon" href="img/favicon.ico">
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="node_modules/bootstrap-grid/dist/grid.min.css">
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js/top.js"></script>
 </head>
 
-<body class="top">
+<body class="top top-sp">
 
 <header class="topHeader">
   <div class="topHeader__logo">
@@ -48,7 +47,7 @@
   </div>
 </header>
 
-<div class="topCover hidden-xs">
+<div class="topCover">
   <div class="topCover__eyecatch">
     <h1 class="topCover__eyecatch__title">日本の就活を変える</h1>
   </div>
@@ -88,7 +87,7 @@
     </div>
   </div>
   <!--<div class="topSection__vertical-line"></div>-->
-  <section class="topSection__content hidden-xs">
+  <section class="topSection__content">
     <article class="topProject clearfix">
 
       <div class="topProject__photo">
@@ -164,8 +163,11 @@
 <section class="topSection">
   <div class="topSection__title clearfix">
     <h2 class="topSection__title__inner">NEWS</h2>
-    <div class="topSection__title__horizontal-line horizontal-line">
+    <div class="topSection__title__horizontal-line horizontal-line sp__horizontal-line--none">
       <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
+			<div class="topNews__all-news--sp hidden-pc">
+	      <a class="topNews__all-news__link--sp" href="news.html">全てのニュースを見る</a>
+	    </div>
     </div>
   </div>
   <!--<span class="topSection__title__line topSection__title__line--v"></span>-->
@@ -182,7 +184,7 @@
       <time class="topNews__article__date" datetime="2017-5-31" pubdate="pubdate">2017年5月31日</time>
       <h3 class="topNews__article__title">3番目のニュースのタイトル</h3>
     </article>
-    <div class="topNews__all-news">
+    <div class="topNews__all-news hidden-sp">
       <a class="topNews__all-news__link" href="news.html">全てのニュースを見る</a>
     </div>
   </section>
@@ -191,7 +193,7 @@
 <section class="topSection">
   <div class="topSection__title clearfix">
     <h2 class="topSection__title__inner">PEOPLE</h2>
-    <div class="topSection__title__horizontal-line horizontal-line">
+    <div class="topSection__title__horizontal-line horizontal-line hidden-sp">
       <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
     </div>
   </div>
