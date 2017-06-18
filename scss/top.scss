@@ -322,7 +322,6 @@
     }
     &--left {
       float: left;
-
     }
     &__title {
     }
@@ -471,6 +470,17 @@
       color: white !important;
       text-decoration: none !important;
     }
+    &__all-news__link--sp {
+      color: white !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+
+.topSection__news-title--sp {
+  @include media-query(mobile) {
+
   }
 }
 
