@@ -29,13 +29,14 @@ body {
 }
 
 .hidden-pc {
-  @media screen and (min-width: 640px) {
-    display: none;
+  display: none;
+  @include media-query(mobile) {
+    display: inherit; // 親要素のdisplay値になるから注意
   }
 }
 
 .hidden-sp {
-  @media screen and (max-width: 640px) {
+  @include media-query(mobile) {
     display: none;
   }
 }
