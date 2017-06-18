@@ -13,9 +13,9 @@ body {
   background-color: $main-theme-color;
 }
 
-.top-sp {
+.top--sp {
   @include media-query(mobile) {
-    margin: 0 2vw;
+    padding: 0 2vw;
     background-color: white;
   }
 }
