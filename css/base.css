@@ -10,8 +10,8 @@ body {
   background-color: #e0ffff; }
 
 @media screen and (max-width: 640px) {
-  .top-sp {
-    margin: 0 2vw;
+  .top--sp {
+    padding: 0 2vw;
     background-color: white; } }
 
 .logo {
