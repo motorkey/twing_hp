@@ -118,6 +118,9 @@
     right: 0;
     left: 0;
     margin: auto;
+    @include media-query(mobile) {
+      top: 45px;
+    }
     &__title {
       @include horizontal-align-center-inner;
       font-size: 5vw;
@@ -126,10 +129,11 @@
       }
     }
   }
-  &__image-list {}
-  @include media-query (mobile) {
-    padding-top: 140px;
-    margin-bottom: 80px;
+  &__image-list {
+    @include media-query (mobile) {
+      padding-top: 140px;
+      margin-bottom: 80px;
+    }
   }
 }
 
@@ -223,9 +227,18 @@
   padding-left: $top-section-padding;
   padding-right: $top-section-padding;
   position: relative;
+  @include media-query(mobile) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5vh;
+  }
   &__title {
     display: -webkit-flex;
     display: flex;
+    @include media-query(mobile) {
+      padding-left: $top-section-padding;
+      position: relative;
+    }
     &__inner {
       -webkit-align-items: stretch;
       align-items: stretch;
@@ -238,6 +251,16 @@
       border-top: 1px solid #000;
     }
   }
+@include media-query(mobile) {
+  .sp__horizontal-line--none {
+    flex: initial;
+    border-top: none;
+    text-align: right;
+    position: absolute;
+    right: 2vw;
+
+  }
+}
   /*&__vertical-line {
     position: absolute;
     width: 2px;
@@ -249,6 +272,7 @@
     margin-left: $top-section-content-margin;
     margin-right: $top-section-content-margin;
     @include media-query(mobile) {
+      border-left: none;
       margin-left: 0;
       margin-right: 0;
     }
@@ -257,11 +281,22 @@
 
 .topProject {
   padding-left: $top-project-padding;
+  @include media-query(mobile) {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
   &__photo {
     float: left;
     margin-left: $top-project-negative-margin;
     margin-top: 40px;
     width: calc(50% - #{$top-project-negative-margin});
+    @include media-query(mobile) {
+      margin-left: 0;
+      margin-top: 0;
+      border: 1px solid black;
+      width: 25vw;
+      height: 60vh;
+    }
     &--right {
       float: right;
     }
@@ -273,8 +308,13 @@
   &__desc {
     float: left;
     width: 50%;
+    @include media-query(mobile) {
+      width: 60vw;
+      padding: 0 20px;
+    }
     &--left {
       float: left;
+
     }
     &__number {
 
@@ -286,11 +326,18 @@
 
     }
   }
-  /*&__left {
+  &__left {
     margin-left: $top-project-negative-margin;
     margin-top: 40px;
     float: left;
     width: calc(50% - #{$top-project-negative-margin});
+    @include media-query(mobile) {
+      margin-left: 0;
+      border: 1px solid black;
+      width: 25vw;
+      height: 60vh;
+      margin-top: 0;
+    }
     &__image {
       width: 100%;
       height: auto;
@@ -300,6 +347,12 @@
     float: right;
     width: 50%;
     transform: skewX(30deg);
+    @include media-query(mobile) {
+      transform: none;
+      float: left;
+      width: 60vw;
+      padding: 0 20px;
+    }
     &__number {
       transform: skewX(- 30deg);
     }
@@ -318,6 +371,10 @@
     &__left {
       float: left;
       width: 50%;
+      @include media-query(mobile) {
+        float: right;
+        width: 60vw;
+      }
       &__number {
 
       }
@@ -333,12 +390,20 @@
       margin-top: 40px;
       float: left;
       width: calc(50% - #{$top-project-negative-margin});
+      @include media-query(mobile) {
+        margin-left: 0;
+        margin-top: 0;
+        float: 0;
+        width: 25vw;
+        height: 60vh;
+        border: 1px solid black;
+      }
       &__image {
         width: 100%;
         height: auto;
       }
     }
-  }*/
+  }
 }
 
 .topNews {
@@ -355,6 +420,11 @@
     text-align: center;
     background-color: $top-news-color;
     border-bottom: 2px solid $main-theme-color;
+    @include media-query(mobile) {
+      border-bottom: none;
+      border-top: 2px solid black;
+      height: 10vh
+    }
     &:hover {
       border-left: 4px solid #73b4d2;
     }
@@ -377,6 +447,17 @@
     &__link {
       color: $black !important;
       text-decoration: none !important;
+    }
+  }
+  @include media-query(mobile) {
+    &__all-news--sp {
+      text-align: right;
+      font-size: 12px;
+      border: 2px solid $sub-theme-color;
+      &__link--sp {
+        color: $black !important;
+        text-decoration: none !important;
+      }
     }
   }
 }
@@ -411,7 +492,8 @@
       max-width: 100%;
       z-index: 1;
       @include media-query(mobile) {
-        //max-height: 50%;
+        width: 100%;
+        max-height: 40vh;
       }
     }
   }
