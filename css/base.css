@@ -62,9 +62,9 @@ body {
         top: 54px; } }
     .topHeader__hamburger__menu .gnavs__item {
       height: 40px;
-      font-size: 20px;
       border-bottom: 1px solid gray;
-      padding: 10px; }
+      padding: 2vh 10vw;
+      line-height: 40px; }
 
 .hamburger {
   position: fixed;
@@ -381,7 +381,7 @@ body {
     @media screen and (max-width: 640px) {
       .topNews__article {
         border-bottom: none;
-        border-top: 2px solid black;
+        border-top: 1px solid gray;
         height: 10vh;
         background-color: white; } }
     .topNews__article:hover {
