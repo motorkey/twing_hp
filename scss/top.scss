@@ -317,8 +317,8 @@
     float: left;
     width: 50%;
     @include media-query(mobile) {
-      width: 60vw;
-      padding: 0 20px;
+      width: 65vw;
+      padding-left: 8vw;
     }
     &--left {
       float: left;
@@ -328,7 +328,7 @@
     &__text {
     }
     &--number-size {
-      font-size: 10vw;
+      font-size: 12vw;
     }
     &--eyecatch-size {
       font-size: 5vw;
@@ -358,8 +358,8 @@
     @include media-query(mobile) {
       transform: none;
       float: left;
-      width: 60vw;
-      padding: 0 20px;
+      width: 65vw;
+      padding-left: 8vw;
     }
     &__number {
       transform: skewX(- 30deg);
@@ -381,7 +381,8 @@
       width: 50%;
       @include media-query(mobile) {
         float: right;
-        width: 60vw;
+        width: 65vw;
+        margin-right: 3vw; // 暫定
       }
       &__number {
 
@@ -401,7 +402,7 @@
       @include media-query(mobile) {
         margin-left: 0;
         margin-top: 0;
-        float: 0;
+        float: none;
         width: 20vw;
         height: 60vh;
         border: 1px solid black;
