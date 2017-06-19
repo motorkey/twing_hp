@@ -466,6 +466,13 @@
 .indent--none {
 }
 
+.indent--xxs {
+  padding-left: 0.5vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
 .indent--xs {
   padding-left: 1.5vw;
   @include media-query(mobile) {
@@ -489,6 +496,13 @@
 
 .indent--lg {
   padding-left: 6.3vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.indent--xlg {
+  padding-left: 7.8vw;
   @include media-query(mobile) {
     padding-left: 0;
   }

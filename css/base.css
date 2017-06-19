@@ -418,6 +418,12 @@ body {
       margin-top: 0;
       font-size: inherit; } }
 
+.indent--xxs {
+  padding-left: 0.5vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xxs {
+      padding-left: 0; } }
+
 .indent--xs {
   padding-left: 1.5vw; }
   @media screen and (max-width: 640px) {
@@ -440,6 +446,12 @@ body {
   padding-left: 6.3vw; }
   @media screen and (max-width: 640px) {
     .indent--lg {
+      padding-left: 0; } }
+
+.indent--xlg {
+  padding-left: 7.8vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xlg {
       padding-left: 0; } }
 
 .topNews {
