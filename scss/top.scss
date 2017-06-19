@@ -8,7 +8,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    padding-left: 60px;
+    padding-left: 5vw;
     padding-top: 16px;
     padding-bottom: 16px;
     @include media-query(mobile) {
@@ -26,20 +26,25 @@
   &__hamburger__menu {
     display: none;
     position: fixed;
-    right: 2vw;
-    left: 2vw;
+    right: 0;
+    left: 0;
     z-index: 1001;
+    background-color: $sub-theme-color;
+    color: $main-theme-color;
     @include media-query (mobile) {
       top: 54px;
     }
-    background-color: $sub-theme-color;
-    color: $main-theme-color;
     .gnavs {
       &__item {
-        height: 40px;
+        @include vertical-align-center-inner;
+        height: 5vw;
+        font-size: 1.8vw;
         border-bottom: 1px solid gray;
-        padding: 2vh 10vw;
-        line-height: 40px;
+        padding-left: 5vw;
+        @include media-query(mobile) {
+          height: 10vw;
+          font-size: 3vw;
+        }
       }
     }
   }
@@ -49,7 +54,7 @@
   position: fixed;
   z-index: 1001;
   top: 0;
-  right: 2vw;
+  right: 0vw;
   width: 90px;
   height: 90px;
   cursor: pointer;
@@ -225,8 +230,8 @@
 }
 
 .topSection {
-  padding-left: $top-section-padding;
-  padding-right: $top-section-padding;
+  padding-left: 3vw;
+  padding-right: 3vw;
   position: relative;
   @include media-query(mobile) {
     padding-left: 0;
@@ -234,17 +239,18 @@
     padding-top: 10vh;
   }
   &__title {
+    font-size: 3.5vw;
     display: -webkit-flex;
     display: flex;
     @include media-query(mobile) {
+      font-size: 5vw;
       padding-left: $top-section-padding;
       position: relative;
     }
     &__inner {
       -webkit-align-items: stretch;
       align-items: stretch;
-      font-size: 28px;
-      margin-right: 7px;
+      margin-right: 1vw;
     }
     &__horizontal-line {
       -webkit-flex: 1;
@@ -489,20 +495,21 @@
 }
 
 .topNews {
-  padding: 25px 50px 60px 45px;
+  padding: 25px 5vw 60px 5vw;
   @include media-query(mobile) {
-    padding: 25px 0 0 0;
+    padding: 25px 0 30px 0;
   }
   &__article {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    height: 45px;
+    height: 6vw;
     text-align: center;
     background-color: $top-news-color;
     border-bottom: 2px solid $main-theme-color;
     @include media-query(mobile) {
+      height: 10vw;
       border-bottom: none;
       border-top: 1px solid gray;
       height: 10vh;
@@ -551,7 +558,7 @@
 }
 
 .topPeople {
-  padding: 25px 100px 60px 100px;
+  padding: 25px 5vw 60px 5vw;
   @include media-query(mobile) {
     padding: 25px 0 30px 0;
   }
@@ -594,14 +601,13 @@
   padding-bottom: 10px;
   &__inner {
     color: $black !important;
-    font-size: 12px;
+    font-size: 1.6vw;
   }
 }
 
 .footer {
   background-color: $sub-theme-color;
   color: $main-theme-color;
-  height: 100px;
   padding: 30px;
   @include media-query(mobile) {
     height: 60px;
@@ -610,7 +616,6 @@
     display: inline-block;
     width: 45%;
     height: 100%;
-    border-right: 1px solid gray;
     vertical-align: top;
     @include media-query (mobile) {
       border: none;
@@ -627,13 +632,14 @@
       padding-right: 0;
     }
     &__image {
-      height: 25px;
+      height: 4vw;
     }
   }
   &--right {
     display: inline-block;
     vertical-align: top;
     width: 45%;
+    border-left: 1px solid gray;
     @include media-query(mobile) {
       display: none;
     }
@@ -646,15 +652,15 @@
     &--left {
       display: inline-block;
       vertical-align: top;
-      font-size: 0.3rem;
-      padding-left: 30px;
-      margin-right: 40px;
+      font-size: 1.8vw;
+      padding-left: 3vw;
+      margin-right: 4vw;
     }
     &--right {
       display: inline-block;
       vertical-align: top;
       width: 40%;
-      font-size: 0.3rem;
+      font-size: 1.8vw;;
     }
     &__item {
       padding: 0.2rem;
