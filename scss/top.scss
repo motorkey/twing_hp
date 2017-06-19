@@ -287,7 +287,7 @@
 }
 
 .topProject {
-  padding-left: $top-project-padding;
+  padding: $top-project-padding 0 0 $top-project-padding;
   @include media-query(mobile) {
     padding-left: 0;
     padding-top: 10px;
@@ -332,8 +332,10 @@
     }
     &__title--even {
       text-align: right;
+      margin-top: -5vh;
       @include media-query(mobile) {
         text-align: left;
+        margin-top: 0;
       }
     }
     &__text {
@@ -362,6 +364,9 @@
       @include media-query(mobile) {
         margin-left: 0;
       }
+    }
+    &--second {
+      font-size: 1.5vw;
     }
   }
   &__left {
@@ -421,7 +426,7 @@
 
       }
       &__desc {
-
+        font-size: 1.5vw;
       }
     }
     &__right {
