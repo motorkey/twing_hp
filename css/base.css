@@ -458,6 +458,17 @@ body {
     @media screen and (max-width: 640px) {
       .topNews__left-border--hover {
         display: none; } }
+  .topNews__left-border--hover {
+    display: inline-block;
+    visibility: hidden;
+    vertical-align: top;
+    width: 4px;
+    height: 45px;
+    background-color: #73b4d2;
+    margin-right: -5px; }
+    @media screen and (max-width: 640px) {
+      .topNews__left-border--hover {
+        display: none; } }
   .topNews__article {
     display: inline-block;
     vertical-align: top;
