@@ -9,7 +9,7 @@ $(function() {
     if (windowWidth <= breakpoint) {
         $('.js-topCover-change-inner').html('<span>企業の方へ</span>');
     } else {
-        //    
+        //
     }
   });
 
@@ -38,9 +38,29 @@ console.log($topProjectLeftNegativeMargin);
   $topProjectLeft.css('width', '+=' + $topProjectLeftNegativeMargin);*/
 
   // topNewsのホバーアニメーション
-  $('.js-topNews-hover-animation').on('hover', function(){
-    // transitionで！！！
-  });
+  var handleHoverInFirst = ()=> {
+      $('#first-border').css('visibility', 'inherit');
+  }
+  var handleHoverOutFirst = function() {
+      $('#first-border').css('visibility', 'hidden');
+  }
+  $('#first-news').hover(handleHoverInFirst, handleHoverOutFirst);
+
+  var handleHoverInSecond = ()=> {
+      $('#second-border').css('visibility', 'inherit');
+  }
+  var handleHoverOutSecond = function() {
+      $('#second-border').css('visibility', 'hidden');
+  }
+  $('#second-news').hover(handleHoverInSecond, handleHoverOutSecond);
+
+  var handleHoverInThird = ()=> {
+      $('#third-border').css('visibility', 'inherit');
+  }
+  var handleHoverOutThird = function() {
+      $('#third-border').css('visibility', 'hidden');
+  }
+  $('#third-news').hover(handleHoverInThird, handleHoverOutThird);
 
   // hamburger
   $(".hamburger").on("click", ()=> {
