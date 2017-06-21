@@ -619,7 +619,6 @@ body {
   .footer--left {
     display: inline-block;
     width: 45%;
-    height: 100%;
     vertical-align: top; }
     @media screen and (max-width: 640px) {
       .footer--left {
