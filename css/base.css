@@ -7,12 +7,7 @@
   clear: both; }
 
 body {
-  background-color: #e0ffff; }
-
-@media screen and (max-width: 640px) {
-  .top--sp {
-    padding: 0 2vw;
-    background-color: white; } }
+  background-color: white; }
 
 .logo {
   width: 52px;
@@ -522,6 +517,9 @@ body {
     @media screen and (max-width: 640px) {
       .topNews__left-border--hover {
         display: none; } }
+  .topNews__article-box {
+    padding-right: 1vw;
+    padding-left: 1vw; }
   .topNews__article {
     display: inline-block;
     vertical-align: top;
@@ -539,7 +537,8 @@ body {
         border-top: 1px solid gray;
         height: 10vh;
         line-height: 10vh;
-        background-color: white; } }
+        background-color: white;
+        width: 100%; } }
     .topNews__article__date {
       float: left;
       font-size: 11px;
