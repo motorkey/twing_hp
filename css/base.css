@@ -25,6 +25,13 @@ body {
   .hidden-sp {
     display: none; } }
 
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
 .topHeader {
   height: 90px;
   z-index: 1; }
@@ -659,3 +666,25 @@ body {
     font-size: 1.8vw; }
   .footer__gnavs__item {
     padding: 0.2rem; }
+
+.contactNav {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20vw; }
+  .contactNav__title {
+    background-color: #0e1f3c;
+    height: 10vw;
+    width: 100%; }
+  .contactNav__main-title {
+    color: white;
+    text-align: center;
+    padding-top: 2.5vw;
+    font-size: 3vw; }
+  .contactNav__sub-title {
+    color: white;
+    text-align: center;
+    font-size: 1.5vw; }
+  .contactNav__item {
+    border: 1px solid gray;
+    height: 20vw;
+    width: 100%; }
