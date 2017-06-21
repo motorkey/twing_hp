@@ -707,7 +707,6 @@
   &--left {
     display: inline-block;
     width: 45%;
-    height: 100%;
     vertical-align: top;
     @include media-query (mobile) {
       border: none;
