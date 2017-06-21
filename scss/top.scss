@@ -293,7 +293,7 @@
 }
 
 .topProject {
-  padding: $top-project-padding 0 0 $top-project-padding;
+  padding: $top-project-padding 0 0 $top-project-padding-left;
   @include media-query(mobile) {
     padding-left: 0;
     padding-top: 10px;
@@ -321,9 +321,11 @@
   &__desc {
     float: left;
     width: 50%;
+    margin-top: -5vh;
     @include media-query(mobile) {
       width: 65vw;
       padding-left: 8vw;
+      margin-top: 0;
     }
     &--left {
       float: left;
@@ -395,12 +397,13 @@
   &__right {
     float: right;
     width: 50%;
-
+    margin-top: -5vh;
     @include media-query(mobile) {
       transform: none;
       float: left;
       width: 65vw;
       padding-left: 8vw;
+      margin-top: 0;
     }
     &__number {
       transform: skewX(- 30deg);
@@ -420,10 +423,12 @@
     &__left {
       float: left;
       width: 50%;
+      margin-top: -4vh;
       @include media-query(mobile) {
         float: right;
         width: 65vw;
         margin-right: 3vw; // 暫定
+        margin-top: 0;
       }
       &__number {
 
@@ -458,13 +463,12 @@
 
 .topProject__text__item {
   display: inline-block;
-  width: 50vw;
   margin-top: 0.8vh;
   font-size: 1.5vw;
   @include media-query(mobile) {
     width: inherit;
     margin-top: 0;
-    font-size: inherit;
+    font-size: 2.5vw;
   }
 }
 
@@ -510,6 +514,40 @@
   padding-left: 7.8vw;
   @include media-query(mobile) {
     padding-left: 0;
+  }
+}
+
+.padding--xs {
+  padding-right: 5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--sm {
+  padding-right: 6.5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--md {
+  padding-right: 8vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+.padding--lg {
+  padding-right: 10vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--xlg {
+  padding-right: 11vw;
+  @include media-query(mobile) {
+    padding-right: 0;
   }
 }
 
