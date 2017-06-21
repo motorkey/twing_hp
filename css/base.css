@@ -678,7 +678,7 @@ body {
   .contactNav__main-title {
     color: white;
     text-align: center;
-    padding-top: 2.5vw;
+    padding-top: 2vw;
     font-size: 3vw; }
   .contactNav__sub-title {
     color: white;
@@ -688,3 +688,16 @@ body {
     border: 1px solid gray;
     height: 20vw;
     width: 100%; }
+
+.contactNav__inner {
+  width: 65%;
+  margin: 0 auto; }
+  .contactNav__inner__title {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw; }
+  .contactNav__inner__tel {
+    margin-bottom: 0.5vw; }
+  .contactNav__inner__fax {
+    margin-bottom: 0.5vw; }
