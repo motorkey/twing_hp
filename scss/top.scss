@@ -293,7 +293,7 @@
 }
 
 .topProject {
-  padding-left: $top-project-padding;
+  padding: $top-project-padding 0 0 $top-project-padding-left;
   @include media-query(mobile) {
     padding-left: 0;
     padding-top: 10px;
@@ -321,9 +321,11 @@
   &__desc {
     float: left;
     width: 50%;
+    margin-top: -5vh;
     @include media-query(mobile) {
       width: 65vw;
       padding-left: 8vw;
+      margin-top: 0;
     }
     &--left {
       float: left;
@@ -338,8 +340,10 @@
     }
     &__title--even {
       text-align: right;
+      margin-top: -5vh;
       @include media-query(mobile) {
         text-align: left;
+        margin-top: 0;
       }
     }
     &__text {
@@ -369,6 +373,9 @@
         margin-left: 0;
       }
     }
+    &--second {
+      font-size: 1.5vw;
+    }
   }
   &__left {
     margin-left: $top-project-negative-margin;
@@ -390,12 +397,13 @@
   &__right {
     float: right;
     width: 50%;
-
+    margin-top: -5vh;
     @include media-query(mobile) {
       transform: none;
       float: left;
       width: 65vw;
       padding-left: 8vw;
+      margin-top: 0;
     }
     &__number {
       transform: skewX(- 30deg);
@@ -415,10 +423,12 @@
     &__left {
       float: left;
       width: 50%;
+      margin-top: -4vh;
       @include media-query(mobile) {
         float: right;
         width: 65vw;
         margin-right: 3vw; // 暫定
+        margin-top: 0;
       }
       &__number {
 
@@ -427,7 +437,7 @@
 
       }
       &__desc {
-
+        font-size: 1.5vw;
       }
     }
     &__right {
@@ -453,17 +463,23 @@
 
 .topProject__text__item {
   display: inline-block;
-  width: 50vw;
   margin-top: 0.8vh;
   font-size: 1.5vw;
   @include media-query(mobile) {
     width: inherit;
     margin-top: 0;
-    font-size: inherit;
+    font-size: 2.5vw;
   }
 }
 
 .indent--none {
+}
+
+.indent--xxs {
+  padding-left: 0.5vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
 }
 
 .indent--xs {
@@ -491,6 +507,47 @@
   padding-left: 6.3vw;
   @include media-query(mobile) {
     padding-left: 0;
+  }
+}
+
+.indent--xlg {
+  padding-left: 7.8vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.padding--xs {
+  padding-right: 5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--sm {
+  padding-right: 6.5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--md {
+  padding-right: 8vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+.padding--lg {
+  padding-right: 10vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.padding--xlg {
+  padding-right: 11vw;
+  @include media-query(mobile) {
+    padding-right: 0;
   }
 }
 
@@ -523,6 +580,10 @@
       display: none;
     }
   }
+  &__article-box {
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
   &__article {
     // display: -webkit-flex;
     // display: flex;
@@ -543,6 +604,7 @@
       height: 10vh;
       line-height: 10vh;
       background-color: white;
+      width: 100%;
     }
     // &:hover {
     //   border-left: 4px solid #73b4d2;

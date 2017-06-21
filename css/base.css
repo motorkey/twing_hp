@@ -7,12 +7,7 @@
   clear: both; }
 
 body {
-  background-color: #e0ffff; }
-
-@media screen and (max-width: 640px) {
-  .top--sp {
-    padding: 0 2vw;
-    background-color: white; } }
+  background-color: white; }
 
 .logo {
   width: 52px;
@@ -289,7 +284,7 @@ body {
         margin-right: 0; } }
 
 .topProject {
-  padding-left: 68px; }
+  padding: 68px 0 0 40px; }
   @media screen and (max-width: 640px) {
     .topProject {
       padding-left: 0;
@@ -313,11 +308,13 @@ body {
       height: auto; }
   .topProject__desc {
     float: left;
-    width: 50%; }
+    width: 50%;
+    margin-top: -5vh; }
     @media screen and (max-width: 640px) {
       .topProject__desc {
         width: 65vw;
-        padding-left: 8vw; } }
+        padding-left: 8vw;
+        margin-top: 0; } }
     .topProject__desc--left {
       float: left; }
     .topProject__desc__title--odd {
@@ -328,10 +325,12 @@ body {
           margin-left: 0;
           margin-top: 0; } }
     .topProject__desc__title--even {
-      text-align: right; }
+      text-align: right;
+      margin-top: -5vh; }
       @media screen and (max-width: 640px) {
         .topProject__desc__title--even {
-          text-align: left; } }
+          text-align: left;
+          margin-top: 0; } }
     .topProject__desc__text {
       margin-left: -7vw;
       margin-top: -3vh; }
@@ -356,6 +355,8 @@ body {
       @media screen and (max-width: 640px) {
         .topProject__desc--eyecatch-size {
           margin-left: 0; } }
+    .topProject__desc--second {
+      font-size: 1.5vw; }
   .topProject__left {
     margin-left: -101px;
     margin-top: 40px;
@@ -373,23 +374,29 @@ body {
       height: auto; }
   .topProject__right {
     float: right;
-    width: 50%; }
+    width: 50%;
+    margin-top: -5vh; }
     @media screen and (max-width: 640px) {
       .topProject__right {
         transform: none;
         float: left;
         width: 65vw;
-        padding-left: 8vw; } }
+        padding-left: 8vw;
+        margin-top: 0; } }
     .topProject__right__number {
       transform: skewX(-30deg); }
   .topProject--reversed__left {
     float: left;
-    width: 50%; }
+    width: 50%;
+    margin-top: -4vh; }
     @media screen and (max-width: 640px) {
       .topProject--reversed__left {
         float: right;
         width: 65vw;
-        margin-right: 3vw; } }
+        margin-right: 3vw;
+        margin-top: 0; } }
+    .topProject--reversed__left__desc {
+      font-size: 1.5vw; }
   .topProject--reversed__right {
     margin-left: -101px;
     margin-top: 40px;
@@ -409,14 +416,19 @@ body {
 
 .topProject__text__item {
   display: inline-block;
-  width: 50vw;
   margin-top: 0.8vh;
   font-size: 1.5vw; }
   @media screen and (max-width: 640px) {
     .topProject__text__item {
       width: inherit;
       margin-top: 0;
-      font-size: inherit; } }
+      font-size: 2.5vw; } }
+
+.indent--xxs {
+  padding-left: 0.5vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xxs {
+      padding-left: 0; } }
 
 .indent--xs {
   padding-left: 1.5vw; }
@@ -441,6 +453,42 @@ body {
   @media screen and (max-width: 640px) {
     .indent--lg {
       padding-left: 0; } }
+
+.indent--xlg {
+  padding-left: 7.8vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xlg {
+      padding-left: 0; } }
+
+.padding--xs {
+  padding-right: 5vw; }
+  @media screen and (max-width: 640px) {
+    .padding--xs {
+      padding-right: 0; } }
+
+.padding--sm {
+  padding-right: 6.5vw; }
+  @media screen and (max-width: 640px) {
+    .padding--sm {
+      padding-right: 0; } }
+
+.padding--md {
+  padding-right: 8vw; }
+  @media screen and (max-width: 640px) {
+    .padding--md {
+      padding-right: 0; } }
+
+.padding--lg {
+  padding-right: 10vw; }
+  @media screen and (max-width: 640px) {
+    .padding--lg {
+      padding-right: 0; } }
+
+.padding--xlg {
+  padding-right: 11vw; }
+  @media screen and (max-width: 640px) {
+    .padding--xlg {
+      padding-right: 0; } }
 
 .topNews {
   padding: 25px 5vw 60px 5vw; }
@@ -469,6 +517,9 @@ body {
     @media screen and (max-width: 640px) {
       .topNews__left-border--hover {
         display: none; } }
+  .topNews__article-box {
+    padding-right: 1vw;
+    padding-left: 1vw; }
   .topNews__article {
     display: inline-block;
     vertical-align: top;
@@ -486,7 +537,8 @@ body {
         border-top: 1px solid gray;
         height: 10vh;
         line-height: 10vh;
-        background-color: white; } }
+        background-color: white;
+        width: 100%; } }
     .topNews__article__date {
       float: left;
       font-size: 11px;
