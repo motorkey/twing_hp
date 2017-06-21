@@ -131,6 +131,10 @@ body {
   position: relative;
   margin-bottom: 30px; }
   .topCover__eyecatch {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
     z-index: 1;
     position: absolute;
     top: 90px;
@@ -141,14 +145,10 @@ body {
       .topCover__eyecatch {
         top: 45px; } }
     .topCover__eyecatch__title {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: center;
-      justify-content: center;
-      font-size: 5vw; }
+      height: 4.2vw; }
       @media screen and (max-width: 640px) {
         .topCover__eyecatch__title {
-          font-size: 7vw; } }
+          height: 5.6vw; } }
   @media screen and (max-width: 640px) {
     .topCover__image-list {
       padding-top: 140px;
