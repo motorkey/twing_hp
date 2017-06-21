@@ -2,6 +2,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.top {
+}
+
 .clearfix:after {
   content: "";
   display: block;
@@ -10,14 +13,7 @@
 
 // degub
 body {
-  background-color: $main-theme-color;
-}
-
-.top--sp {
-  @include media-query(mobile) {
-    padding: 0 2vw;
-    background-color: white;
-  }
+  background-color: white;
 }
 
 .logo {
