@@ -659,7 +659,7 @@ body {
 
 .contactNav {
   width: 95%;
-  margin: 0 auto; }
+  margin: 3vw auto 0 auto; }
   .contactNav__title {
     background-color: #0e1f3c;
     height: 5vw;
