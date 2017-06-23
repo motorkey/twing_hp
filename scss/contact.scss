@@ -21,7 +21,7 @@
     border: 1px solid gray;
     width: 100%;
     &__inner {
-      padding-bottom: 3vw;
+      // padding-bottom: 3vw;
     }
   }
 }
@@ -32,19 +32,6 @@
   &__title {
     font-size: 1.5vw;
     font-weight: bold;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-  }
-  &__tel {
-    margin-bottom: 0.5vw;
-    font-size: 1.2vw;
-  }
-  &__fax {
-    font-size: 1.2vw;
-  }
-  &__link {
-    margin-top: 1vw;
-    font-size: 1.2vw;
   }
 }
 
