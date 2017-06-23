@@ -76,7 +76,7 @@
   }
   &__btn {
     height: 3vw;
-    width: 8vw;
+    width: 10vw;
     line-height: 3vw;
     background-color: $sub-theme-color;
     border-radius: 0.5vw;
@@ -85,6 +85,9 @@
   }
 
   &--student {
+    display: none;
+  }
+  &--univ {
     display: none;
   }
 }
