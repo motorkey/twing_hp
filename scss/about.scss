@@ -1,7 +1,9 @@
-.aboutSection {
+.aboutPage {
   border: 1px solid gray;
   margin: 2vw; // temp
   padding: 5vw 10vw;
+}
+.aboutUpperSection {
   &__title {
     font-weight: bold;
     display: inline-block;
@@ -11,12 +13,19 @@
   &__content {
     display: inline-block;
     width: 80%;
-    border: 1px solid black;
     padding-left: 5vw;
     padding-top: 0.5vw;
+    padding-bottom: 3vw;
   }
   &__item {
     font-size: 1.2vw;
     padding-bottom: 0.5vw;
   }
+}
+
+.aboutLowerSection {
+}
+
+.about__map {
+  height: 25vw;
 }
