@@ -676,25 +676,13 @@ body {
   .contactNav__item {
     border: 1px solid gray;
     width: 100%; }
-    .contactNav__item__inner {
-      padding-bottom: 3vw; }
 
 .contactNav__inner {
   width: 65%;
   margin: 0 auto; }
   .contactNav__inner__title {
     font-size: 1.5vw;
-    font-weight: bold;
-    margin-top: 2vw;
-    margin-bottom: 2vw; }
-  .contactNav__inner__tel {
-    margin-bottom: 0.5vw;
-    font-size: 1.2vw; }
-  .contactNav__inner__fax {
-    font-size: 1.2vw; }
-  .contactNav__inner__link {
-    margin-top: 1vw;
-    font-size: 1.2vw; }
+    font-weight: bold; }
 
 .contactForm {
   border: 1px solid gray;
