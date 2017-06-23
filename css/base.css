@@ -709,10 +709,9 @@ body {
 .contactForm {
   border: 1px solid gray;
   margin: 0 auto;
-  width: 95%; }
-  .contactForm--company {
-    padding-top: 3vw;
-    padding-bottom: 6vw; }
+  width: 95%;
+  padding-top: 3vw;
+  padding-bottom: 6vw; }
   .contactForm__item {
     margin: 2.5vw auto 0 auto;
     width: 70%; }
@@ -737,3 +736,5 @@ body {
     border-radius: 0.5vw;
     border: none;
     color: white; }
+  .contactForm--student {
+    display: none; }

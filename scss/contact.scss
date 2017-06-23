@@ -52,10 +52,8 @@
   border: 1px solid gray;
   margin: 0 auto; // 仮
   width: 95%;
-  &--company {
-    padding-top: 3vw;
-    padding-bottom: 6vw;
-  }
+  padding-top: 3vw;
+  padding-bottom: 6vw;
   &__item {
     margin: 2.5vw auto 0 auto;
     width: 70%;
@@ -84,5 +82,9 @@
     border-radius: 0.5vw;
     border: none;
     color: white;
+  }
+
+  &--student {
+    display: none;
   }
 }
