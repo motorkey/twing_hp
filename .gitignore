@@ -1,6 +1,7 @@
 /tmp/*
 .DS_Store
-.temp
+.env
+
 *.swp
 /sample/*
 
