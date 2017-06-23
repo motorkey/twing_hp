@@ -41,7 +41,7 @@ console.log($topProjectLeftNegativeMargin);
   var handleHoverInFirst = ()=> {
       $('#first-border').css('visibility', 'inherit');
   }
-  var handleHoverOutFirst = function() {
+  var handleHoverOutFirst = ()=> {
       $('#first-border').css('visibility', 'hidden');
   }
   $('#first-news').hover(handleHoverInFirst, handleHoverOutFirst);
@@ -49,7 +49,7 @@ console.log($topProjectLeftNegativeMargin);
   var handleHoverInSecond = ()=> {
       $('#second-border').css('visibility', 'inherit');
   }
-  var handleHoverOutSecond = function() {
+  var handleHoverOutSecond = ()=> {
       $('#second-border').css('visibility', 'hidden');
   }
   $('#second-news').hover(handleHoverInSecond, handleHoverOutSecond);
@@ -57,7 +57,7 @@ console.log($topProjectLeftNegativeMargin);
   var handleHoverInThird = ()=> {
       $('#third-border').css('visibility', 'inherit');
   }
-  var handleHoverOutThird = function() {
+  var handleHoverOutThird = ()=> {
       $('#third-border').css('visibility', 'hidden');
   }
   $('#third-news').hover(handleHoverInThird, handleHoverOutThird);
@@ -68,5 +68,22 @@ console.log($topProjectLeftNegativeMargin);
       $(this).toggleClass("active");
       $(".hamburger--open").toggle();
       $(".hamburger--close").toggle();
+  });
+
+  // contactNav
+  $("#companyNav").hover(()=> {
+      $(".contactForm--student").css("display", "none");
+      $(".contactForm--univ").css("display", "none");
+      $(".contactForm--company").css("display", "block");
+  });
+  $("#studentNav").hover(()=> {
+      $(".contactForm--company").css("display", "none");
+      $(".contactForm--univ").css("display", "none");
+      $(".contactForm--student").css("display", "block");
+  });
+  $("#univNav").hover(()=> {
+      $(".contactForm--student").css("display", "none");
+      $(".contactForm--company").css("display", "none");
+      $(".contactForm--univ").css("display", "block");
   });
 });
