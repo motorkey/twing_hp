@@ -1,29 +1,27 @@
 .contactNav {
   width: 95%;
-  margin: 0 auto;
-  margin-bottom: 20vw; // 仮
+  margin: 0 auto; // 仮
   &__title {
     background-color: $sub-theme-color;
-    height: 10vw;
+    height: 5vw;
     width: 100%;
   }
   &__main-title {
     color: white;
     text-align: center;
-    padding-top: 2vw;
-    font-size: 3vw;
+    padding-top: 1vw;
+    font-size: 1.5vw;
   }
   &__sub-title {
     color: white;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 0.5vw;
   }
   &__item {
     border: 1px solid gray;
-    height: 20vw;
     width: 100%;
     &__inner {
-
+      padding-bottom: 3vw;
     }
   }
 }
@@ -32,18 +30,59 @@
   width: 65%;
   margin: 0 auto;
   &__title {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
   }
   &__tel {
     margin-bottom: 0.5vw;
+    font-size: 1.2vw;
   }
   &__fax {
-    ;
+    font-size: 1.2vw;
   }
   &__link {
     margin-top: 1vw;
+    font-size: 1.2vw;
+  }
+}
+
+.contactForm {
+  border: 1px solid gray;
+  margin: 0 auto; // 仮
+  width: 95%;
+  &--company {
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  &__item {
+    margin: 2.5vw auto 0 auto;
+    width: 70%;
+    &__btn {
+      text-align: center;
+      margin-top: 3.5vw;
+    }
+  }
+  &__form-label {
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 10vw;
+  }
+  &__form {
+    width: 80%;
+    height: 2.5vw;
+    border: 1px solid gray;
+    border-radius: 0.5vw;
+  }
+  &__btn {
+    height: 3vw;
+    width: 8vw;
+    line-height: 3vw;
+    background-color: $sub-theme-color;
+    border-radius: 0.5vw;
+    border: none;
+    color: white;
   }
 }
