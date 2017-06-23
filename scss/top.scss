@@ -562,19 +562,7 @@
     visibility: hidden;
     vertical-align: top;
     width: 4px;
-    height: 45px;
-    background-color: #73b4d2;
-    margin-right: -5px;
-    @include media-query(mobile) {
-      display: none;
-    }
-  }
-  &__left-border--hover {
-    display: inline-block;
-    visibility: hidden;
-    vertical-align: top;
-    width: 4px;
-    height: 45px;
+    height: 6vw;
     background-color: #73b4d2;
     margin-right: -5px;
     @include media-query(mobile) {
