@@ -744,3 +744,22 @@ body {
     display: none; }
   .contactForm--univ {
     display: none; }
+
+.aboutSection {
+  border: 1px solid gray;
+  margin: 2vw;
+  padding: 5vw 10vw; }
+  .aboutSection__title {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5vw; }
+  .aboutSection__content {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid black;
+    padding-left: 5vw;
+    padding-top: 0.5vw; }
+  .aboutSection__item {
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw; }
