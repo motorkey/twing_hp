@@ -45,17 +45,16 @@ body {
   display: flex;
 }
 
+// bootstrapの上書き
 .nav > li > a {
   text-decoration: none;
 }
-
 .nav-tabs > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  zoom:1; /* hasLayout ie7 trigger */
 }
-
 .nav-tabs {
-    text-align:center;
+  text-align:center;
 }
