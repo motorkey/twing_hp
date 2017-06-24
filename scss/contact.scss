@@ -1,10 +1,10 @@
 .contactNav {
   width: 95%;
-  margin: 3vw auto 0 auto; // 仮
+  margin: 2vw auto 0 auto; // 仮
   &__title {
-    background-color: $sub-theme-color;
-    height: 5vw;
-    width: 100%;
+    width: 31.5vw;
+    text-align: center;
+
   }
   &__main-title {
     color: white;
@@ -26,6 +26,16 @@
   }
 }
 
+.contact-page__title {
+  margin-left: 3vw;
+}
+
+.contentBorder {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
 .contactNav__inner {
   width: 65%;
   margin: 0 auto;
@@ -36,9 +46,6 @@
 }
 
 .contactForm {
-  border: 1px solid gray;
-  margin: 0 auto; // 仮
-  width: 95%;
   padding-top: 3vw;
   padding-bottom: 6vw;
   &__item {
@@ -59,7 +66,7 @@
     width: 80%;
     height: 2.5vw;
     border: 1px solid gray;
-    border-radius: 0.5vw;
+    border-radius: 4px;
     font-size: 1.2vw;
   }
   &__form-require {
@@ -73,12 +80,5 @@
     border-radius: 0.5vw;
     border: none;
     color: white;
-  }
-
-  &--student {
-    display: none;
-  }
-  &--univ {
-    display: none;
   }
 }

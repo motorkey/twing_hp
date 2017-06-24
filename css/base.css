@@ -32,6 +32,20 @@ body {
   display: -o-flex;
   display: flex; }
 
+.nav > li > a {
+  text-decoration: none; }
+
+.nav-tabs > li {
+  float: none;
+  display: inline-block;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */ }
+
+.nav-tabs {
+  text-align: center; }
+
 .topHeader {
   height: 90px;
   z-index: 1; }
@@ -659,11 +673,10 @@ body {
 
 .contactNav {
   width: 95%;
-  margin: 3vw auto 0 auto; }
+  margin: 2vw auto 0 auto; }
   .contactNav__title {
-    background-color: #0e1f3c;
-    height: 5vw;
-    width: 100%; }
+    width: 31.5vw;
+    text-align: center; }
   .contactNav__main-title {
     color: white;
     text-align: center;
@@ -677,6 +690,14 @@ body {
     border: 1px solid gray;
     width: 100%; }
 
+.contact-page__title {
+  margin-left: 3vw; }
+
+.contentBorder {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+
 .contactNav__inner {
   width: 65%;
   margin: 0 auto; }
@@ -685,9 +706,6 @@ body {
     font-weight: bold; }
 
 .contactForm {
-  border: 1px solid gray;
-  margin: 0 auto;
-  width: 95%;
   padding-top: 3vw;
   padding-bottom: 6vw; }
   .contactForm__item {
@@ -705,7 +723,7 @@ body {
     width: 80%;
     height: 2.5vw;
     border: 1px solid gray;
-    border-radius: 0.5vw;
+    border-radius: 4px;
     font-size: 1.2vw; }
   .contactForm__form-require {
     height: 10vw; }
@@ -717,10 +735,6 @@ body {
     border-radius: 0.5vw;
     border: none;
     color: white; }
-  .contactForm--student {
-    display: none; }
-  .contactForm--univ {
-    display: none; }
 
 .aboutPage {
   border: 1px solid gray;
