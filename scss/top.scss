@@ -694,6 +694,7 @@
   background-color: $sub-theme-color;
   color: $main-theme-color;
   padding: 30px;
+  position: relative;
   &--left {
     display: inline-block;
     width: 45%;
@@ -728,6 +729,13 @@
   &__copyright {
   font-size: 0.4rem;
   opacity: 0.5;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  @include media-query(mobile) {
+    left: 1vw;
+    bottom: 1vw;
+  }
   }
   &__gnavs {
     &--left {

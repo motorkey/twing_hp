@@ -32,6 +32,14 @@ body {
   display: -o-flex;
   display: flex; }
 
+a.link-underline--cancel {
+  text-decoration: none;
+  color: inherit; }
+
+a.link-underline--cancel:hover {
+  text-decoration: none;
+  color: gray; }
+
 .nav > li > a {
   text-decoration: none; }
 
@@ -627,7 +635,8 @@ body {
 .footer {
   background-color: #0e1f3c;
   color: #fff;
-  padding: 30px; }
+  padding: 30px;
+  position: relative; }
   .footer--left {
     display: inline-block;
     width: 45%;
@@ -657,7 +666,14 @@ body {
         display: none; } }
   .footer__copyright {
     font-size: 0.4rem;
-    opacity: 0.5; }
+    opacity: 0.5;
+    position: absolute;
+    left: 10px;
+    bottom: 10px; }
+    @media screen and (max-width: 640px) {
+      .footer__copyright {
+        left: 1vw;
+        bottom: 1vw; } }
   .footer__gnavs--left {
     display: inline-block;
     vertical-align: top;
