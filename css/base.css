@@ -134,7 +134,7 @@ body {
   .hamburger--close {
     display: none; }
     .hamburger--close__icon {
-      font-size: 4.5rem;
+      font-size: 4.5em;
       position: relative; }
       @media screen and (max-width: 640px) {
         .hamburger--close__icon {
@@ -623,9 +623,6 @@ body {
   background-color: #0e1f3c;
   color: #fff;
   padding: 30px; }
-  @media screen and (max-width: 640px) {
-    .footer {
-      height: 60px; } }
   .footer--left {
     display: inline-block;
     width: 45%;
@@ -725,6 +722,9 @@ body {
     border: 1px solid gray;
     border-radius: 4px;
     font-size: 1.2vw; }
+    @media screen and (max-width: 640px) {
+      .contactForm__form {
+        height: 3vw; } }
   .contactForm__form-require {
     height: 10vw; }
   .contactForm__btn {
@@ -734,7 +734,28 @@ body {
     background-color: #0e1f3c;
     border-radius: 0.5vw;
     border: none;
-    color: white; }
+    color: white;
+    font-size: 1.5vw; }
+    @media screen and (max-width: 640px) {
+      .contactForm__btn {
+        height: 3.5vw;
+        line-height: 3.5vw;
+        width: 15vw; } }
+
+.form-label--alignTop {
+  vertical-align: top; }
+
+@media screen and (max-width: 640px) {
+  .navWidth--sp {
+    width: 37vw; } }
+
+@media screen and (max-width: 640px) {
+  .contact--sp__horizontal-line--none {
+    display: none; } }
+
+@media screen and (max-width: 640px) {
+  .contact__title--sp {
+    font-size: 5vw; } }
 
 .aboutPage {
   border: 1px solid gray;
@@ -746,6 +767,10 @@ body {
   display: inline-block;
   vertical-align: top;
   font-size: 1.5vw; }
+  @media screen and (max-width: 640px) {
+    .aboutUpperSection__title {
+      display: block;
+      margin-bottom: 1vw; } }
 
 .aboutUpperSection__content {
   display: inline-block;

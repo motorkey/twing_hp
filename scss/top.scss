@@ -96,7 +96,7 @@
   &--close {
     display: none;
     &__icon {
-      font-size: 4.5rem;
+      font-size: 4.5em;
       position: relative;
       @include media-query (mobile) {
         font-size: 2.5rem;
@@ -689,9 +689,6 @@
   background-color: $sub-theme-color;
   color: $main-theme-color;
   padding: 30px;
-  @include media-query(mobile) {
-    height: 60px;
-  }
   &--left {
     display: inline-block;
     width: 45%;

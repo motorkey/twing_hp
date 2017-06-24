@@ -55,8 +55,8 @@
 
 <div class="contact-page__title">
   <div class="topSection__title">
-    <h2 class="topSection__title__inner">CONTACT</h2>
-    <div class="topSection__title__horizontal-line horizontal-line">
+    <h2 class="topSection__title__inner contact__title--sp">CONTACT</h2>
+    <div class="topSection__title__horizontal-line horizontal-line contact--sp__horizontal-line--none">
       <span class="horizontal-line__inner js-horizontal-line-slide-in"></span>
     </div>
   </div>
@@ -64,240 +64,116 @@
 </div>
 
 <div class="contactNav">
-
-<div class="navPadding">
-  <ul class="nav nav-tabs">
+  <div class="navPadding">
+    <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a href="#tab1" class="nav-link bg-info contactNav__title" data-toggle="tab">企業の方</a>
+        <a href="#tab1" class="nav-link bg-info contactNav__title" data-toggle="tab">企業様</a>
       </li>
       <li class="nav-item">
-        <a href="#tab2" class="nav-link bg-info contactNav__title" data-toggle="tab">学生の方</a>
+        <a href="#tab2" class="nav-link bg-info contactNav__title" data-toggle="tab">学生様</a>
       </li>
       <li class="nav-item">
-        <a href="#tab3" class="nav-link bg-info contactNav__title" data-toggle="tab">大学関係者</a>
+        <a href="#tab3" class="nav-link bg-info contactNav__title navWidth--sp" data-toggle="tab">大学関係者様</a>
       </li>
     </ul>
   </div>
-    <!--タブのコンテンツ部分-->
-    <div class="tab-content contentBorder">
-      <div id="tab1" class="tab-pane active">
-        <div class="contactForm">
-          <div class="contactForm__item contactForm--company">
-            <label class="contactForm__form-label" for="company_name">御社名</label>
-            <input type="text" name="company_name" class="contactForm__form" id="company_name" autofocus>
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="department">部署</label>
-            <input type="text" name="department" class="contactForm__form" id="department">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="name">お名前</label>
-            <input type="text" name="name" class="contactForm__form" id="name">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="email">メールアドレス</label>
-            <input type="email" name="email" class="contactForm__form" id="email">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="phone_number">電話番号</label>
-            <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="request">ご要望</label>
-            <input type="text" name="request" class="contactForm__form contactForm__form-require" id="request">
-          </div>
-          <div class="contactForm__item contactForm__item__btn">
-            <input type="submit" value="内容を送信" class="contactForm__btn">
-          </div>
-        </div>
-      </div>
-      <div id="tab2" class="tab-pane">
-        <div class="contactForm">
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="company_name">大学名</label>
-            <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="department">学部・学科</label>
-            <input type="text" name="department" class="contactForm__form" id="department">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="email">メールアドレス</label>
-            <input type="email" name="email" class="contactForm__form" id="email">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="phone_number">電話番号</label>
-            <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="request">問い合わせ理由</label>
-            <select name="request" class="contactForm__form" id="request">
-              <option value="a">イベント参加</option>
-              <option value="b">個人面談希望</option>
-              <option value="c">その他</option>
-            </select>
-          </div>
-          <div class="contactForm__item contactForm__item__btn">
-            <input type="submit" value="内容を送信" class="contactForm__btn">
-          </div>
-        </div>
-      </div>
-      <div id="tab3" class="tab-pane">
-        <div class="contactForm">
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="company_name">大学名</label>
-            <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="department">部署</label>
-            <input type="text" name="department" class="contactForm__form" id="department">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="name">お名前</label>
-            <input type="text" name="name" class="contactForm__form" id="name">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="email">メールアドレス</label>
-            <input type="email" name="email" class="contactForm__form" id="email">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="phone_number">電話番号</label>
-            <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-          </div>
-          <div class="contactForm__item">
-            <label class="contactForm__form-label" for="request">ご要望</label>
-            <input type="text" name="request" class="contactForm__form contactForm__form-require" id="request">
-          </div>
-          <div class="contactForm__item contactForm__item__btn">
-            <input type="submit" value="内容を送信" class="contactForm__btn">
-          </div>
-        </div>
-      </div>
-    </div>
 
-
-  <!-- <div class="contactNav__title">
-    <div class="contactNav__main-title">
-      CONTACT
-    </div>
-    <div class="contactNav__sub-title">
-      お問い合わせ先
-    </div>
-  </div> -->
-  <!-- <div class="flex">
-    <div class="contactNav__item" id="companyNav">
-      <div class="contactNav__item__inner contactNav__inner">
-        <div class="contactNav__inner__title">
-          企業向け
+  <div class="tab-content contentBorder">
+    <div id="tab1" class="tab-pane active">
+      <div class="contactForm">
+        <div class="contactForm__item contactForm--company">
+          <label class="contactForm__form-label" for="company_name">御社名</label>
+          <input type="text" name="company_name" class="contactForm__form" id="company_name" autofocus>
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="department">部署</label>
+          <input type="text" name="department" class="contactForm__form" id="department">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="name">お名前</label>
+          <input type="text" name="name" class="contactForm__form" id="name">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="email">メールアドレス</label>
+          <input type="email" name="email" class="contactForm__form" id="email">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="phone_number">電話番号</label>
+          <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label form-label--alignTop" for="request">ご要望</label>
+          <textarea type="text" name="request" class="contactForm__form contactForm__form-require" id="request"></textarea>
+        </div>
+        <div class="contactForm__item contactForm__item__btn">
+          <input type="submit" value="内容を送信" class="contactForm__btn">
         </div>
       </div>
     </div>
-    <div class="contactNav__item" id="studentNav">
-      <div class="contactNav__item__inner contactNav__inner">
-        <div class="contactNav__inner__title">
-          学生向け
+    <div id="tab2" class="tab-pane">
+      <div class="contactForm">
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="company_name">大学名</label>
+          <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="department">学部・学科</label>
+          <input type="text" name="department" class="contactForm__form" id="department">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="email">メールアドレス</label>
+          <input type="email" name="email" class="contactForm__form" id="email">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="phone_number">電話番号</label>
+          <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="request">問い合わせ理由</label>
+          <select name="request" class="contactForm__form" id="request">
+            <option value="a">イベント参加</option>
+            <option value="b">個人面談希望</option>
+            <option value="c">その他</option>
+          </select>
+        </div>
+        <div class="contactForm__item contactForm__item__btn">
+          <input type="submit" value="内容を送信" class="contactForm__btn">
         </div>
       </div>
     </div>
-    <div class="contactNav__item" id="univNav">
-      <div class="contactNav__item__inner contactNav__inner">
-        <div class="contactNav__inner__title">
-          大学向け
+    <div id="tab3" class="tab-pane">
+      <div class="contactForm">
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="company_name">大学名</label>
+          <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="department">部署</label>
+          <input type="text" name="department" class="contactForm__form" id="department">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="name">お名前</label>
+          <input type="text" name="name" class="contactForm__form" id="name">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="email">メールアドレス</label>
+          <input type="email" name="email" class="contactForm__form" id="email">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label" for="phone_number">電話番号</label>
+          <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
+        </div>
+        <div class="contactForm__item">
+          <label class="contactForm__form-label form-label--alignTop" for="request">ご要望</label>
+          <textarea type="text" name="request" class="contactForm__form contactForm__form-require" id="request"></textarea>
+        </div>
+        <div class="contactForm__item contactForm__item__btn">
+          <input type="submit" value="内容を送信" class="contactForm__btn">
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="contactForm contactForm--company">
-  <div class="contactForm__item contactForm--company">
-    <label class="contactForm__form-label" for="company_name">御社名</label>
-    <input type="text" name="company_name" class="contactForm__form" id="company_name" autofocus>
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="department">部署</label>
-    <input type="text" name="department" class="contactForm__form" id="department">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="name">お名前</label>
-    <input type="text" name="name" class="contactForm__form" id="name">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="email">メールアドレス</label>
-    <input type="email" name="email" class="contactForm__form" id="email">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="phone_number">電話番号</label>
-    <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="request">ご要望</label>
-    <input type="text" name="request" class="contactForm__form contactForm__form-require" id="request">
-  </div>
-  <div class="contactForm__item contactForm__item__btn">
-    <input type="submit" value="内容を送信" class="contactForm__btn">
-  </div>
-</div>
-
-<div class="contactForm contactForm--student">
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="company_name">大学名</label>
-    <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="department">学部・学科</label>
-    <input type="text" name="department" class="contactForm__form" id="department">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="email">メールアドレス</label>
-    <input type="email" name="email" class="contactForm__form" id="email">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="phone_number">電話番号</label>
-    <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="request">問い合わせ理由</label>
-    <select name="request" class="contactForm__form" id="request">
-      <option value="a">イベント参加</option>
-      <option value="b">個人面談希望</option>
-      <option value="c">その他</option>
-    </select>
-  </div>
-  <div class="contactForm__item contactForm__item__btn">
-    <input type="submit" value="内容を送信" class="contactForm__btn">
-  </div>
-</div>
-
-<div class="contactForm contactForm--univ">
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="company_name">大学名</label>
-    <input type="text" name="company_name" class="contactForm__form" id="univ_name" autofocus>
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="department">部署</label>
-    <input type="text" name="department" class="contactForm__form" id="department">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="name">お名前</label>
-    <input type="text" name="name" class="contactForm__form" id="name">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="email">メールアドレス</label>
-    <input type="email" name="email" class="contactForm__form" id="email">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="phone_number">電話番号</label>
-    <input type="tel" name="phone_number" class="contactForm__form" id="phone_number">
-  </div>
-  <div class="contactForm__item">
-    <label class="contactForm__form-label" for="request">ご要望</label>
-    <input type="text" name="request" class="contactForm__form contactForm__form-require" id="request">
-  </div>
-  <div class="contactForm__item contactForm__item__btn">
-    <input type="submit" value="内容を送信" class="contactForm__btn">
-  </div>
-</div> -->
 
 <footer class="footer footer--sp">
   <div class="footer--left">
