@@ -757,10 +757,17 @@ body {
   .contact__title--sp {
     font-size: 5vw; } }
 
-.aboutPage {
+.about__UpperImage {
+  width: 100vw;
+  z-index: 1; }
+
+.aboutContent {
   border: 1px solid gray;
-  margin: 2vw;
-  padding: 5vw 10vw; }
+  margin: 0 5vw;
+  padding: 5vw 10vw;
+  z-index: 2;
+  bottom: 10vw;
+  background-color: white; }
 
 .aboutUpperSection__title {
   font-weight: bold;
