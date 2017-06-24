@@ -111,7 +111,9 @@ body {
     right: 0;
     left: 0;
     margin: auto;
-    background-color: #000; }
+    background-color: #000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
     @media screen and (max-width: 640px) {
       .hamburger__line {
         width: 26px;
@@ -131,22 +133,25 @@ body {
       @media screen and (max-width: 640px) {
         .hamburger__line--bot {
           top: 36px; } }
-  .hamburger--close {
-    display: none; }
-    .hamburger--close__icon {
-      font-size: 4.5em;
-      position: relative; }
-      @media screen and (max-width: 640px) {
-        .hamburger--close__icon {
-          font-size: 2.5rem; } }
-      .hamburger--close__icon__image {
-        position: absolute;
-        top: 3px;
-        left: 18px; }
-        @media screen and (max-width: 640px) {
-          .hamburger--close__icon__image {
-            top: 6px;
-            left: 12px; } }
+
+.line--top--toCloseBtn {
+  top: 38px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  @media screen and (max-width: 640px) {
+    .line--top--toCloseBtn {
+      top: 26px; } }
+
+.line--mid--toCloseBtn {
+  opacity: 0; }
+
+.line--bot--toCloseBtn {
+  top: 38px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+  @media screen and (max-width: 640px) {
+    .line--bot--toCloseBtn {
+      top: 26px; } }
 
 .topCover {
   position: relative;
