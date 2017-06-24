@@ -751,10 +751,6 @@ body {
   vertical-align: top; }
 
 @media screen and (max-width: 640px) {
-  .navWidth--sp {
-    width: 37vw; } }
-
-@media screen and (max-width: 640px) {
   .contact--sp__horizontal-line--none {
     display: none; } }
 
