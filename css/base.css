@@ -80,25 +80,10 @@ a.link-underline--cancel:hover {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1001;
-    background-color: #0e1f3c;
-    color: #fff; }
+    z-index: 1001; }
     @media screen and (max-width: 640px) {
       .topHeader__hamburger__menu {
         top: 54px; } }
-    .topHeader__hamburger__menu .gnavs__item {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      height: 5vw;
-      font-size: 1.8vw;
-      border-bottom: 1px solid gray;
-      padding-left: 5vw; }
-      @media screen and (max-width: 640px) {
-        .topHeader__hamburger__menu .gnavs__item {
-          height: 10vw;
-          font-size: 3vw; } }
 
 .hamburger {
   position: fixed;
@@ -141,6 +126,21 @@ a.link-underline--cancel:hover {
       @media screen and (max-width: 640px) {
         .hamburger__line--bot {
           top: 36px; } }
+  .hamburger__gnavs__item {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 5vw;
+    font-size: 1.8vw;
+    border-bottom: 1px solid gray;
+    padding-left: 5vw;
+    background-color: #0e1f3c;
+    color: #fff; }
+    @media screen and (max-width: 640px) {
+      .hamburger__gnavs__item {
+        height: 10vw;
+        font-size: 3vw; } }
 
 .line--top--toCloseBtn {
   top: 38px;
