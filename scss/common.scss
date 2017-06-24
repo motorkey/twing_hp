@@ -45,6 +45,16 @@ body {
   display: flex;
 }
 
+a.link-underline--cancel {
+  text-decoration: none;
+  color: inherit;
+}
+a.link-underline--cancel:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+
 // bootstrapの上書き
 .nav > li > a {
   text-decoration: none;

@@ -693,24 +693,26 @@
 .footer {
   background-color: $sub-theme-color;
   color: $main-theme-color;
-  padding: 30px;
+  padding: 30px 15px 30px 30px;
+  position: relative;
+  @media screen and (max-width: 414px) {
+    padding: 20px 0 20px 20px;
+  }
   &--left {
     display: inline-block;
     width: 45%;
     vertical-align: top;
-    @include media-query (mobile) {
-      border: none;
-      width: 100%;
+    @media screen and (max-width: 414px) {
+      width: 30%;
     }
   }
   &__logo {
     text-align: right;
     padding-right: 60px;
     margin-top: 25px;
-    @include media-query(mobile) {
-      text-align: center;
+    @media screen and (max-width: 414px) {
+      padding-right: 40px;
       margin-top: 15px;
-      padding-right: 0;
     }
     &__image {
       height: 4vw;
@@ -719,15 +721,22 @@
   &--right {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 50%;
     border-left: 1px solid gray;
-    @include media-query(mobile) {
-      display: none;
+    @media screen and (max-width: 414px) {
+      width: 65%;
     }
   }
   &__copyright {
   font-size: 0.4rem;
   opacity: 0.5;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  @include media-query(mobile) {
+    left: 1vw;
+    bottom: 1vw;
+  }
   }
   &__gnavs {
     &--left {
@@ -740,11 +749,14 @@
     &--right {
       display: inline-block;
       vertical-align: top;
-      width: 40%;
-      font-size: 1.8vw;;
+      width: 45%;
+      font-size: 1.8vw;
+      @media screen and (max-width: 414px) {
+        font-size: 1.5vw;
+      }
     }
     &__item {
-      padding: 0.2rem;
+      padding: 0.3vw;
       font-size: 1vw;
     }
   }

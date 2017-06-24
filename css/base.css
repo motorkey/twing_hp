@@ -32,6 +32,14 @@ body {
   display: -o-flex;
   display: flex; }
 
+a.link-underline--cancel {
+  text-decoration: none;
+  color: inherit; }
+
+a.link-underline--cancel:hover {
+  text-decoration: none;
+  color: gray; }
+
 .nav > li > a {
   text-decoration: none; }
 
@@ -627,37 +635,46 @@ body {
 .footer {
   background-color: #0e1f3c;
   color: #fff;
-  padding: 30px; }
+  padding: 30px 15px 30px 30px;
+  position: relative; }
+  @media screen and (max-width: 414px) {
+    .footer {
+      padding: 20px 0 20px 20px; } }
   .footer--left {
     display: inline-block;
     width: 45%;
     vertical-align: top; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 414px) {
       .footer--left {
-        border: none;
-        width: 100%; } }
+        width: 30%; } }
   .footer__logo {
     text-align: right;
     padding-right: 60px;
     margin-top: 25px; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 414px) {
       .footer__logo {
-        text-align: center;
-        margin-top: 15px;
-        padding-right: 0; } }
+        padding-right: 40px;
+        margin-top: 15px; } }
     .footer__logo__image {
       height: 4vw; }
   .footer--right {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
+    width: 50%;
     border-left: 1px solid gray; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 414px) {
       .footer--right {
-        display: none; } }
+        width: 65%; } }
   .footer__copyright {
     font-size: 0.4rem;
-    opacity: 0.5; }
+    opacity: 0.5;
+    position: absolute;
+    left: 10px;
+    bottom: 10px; }
+    @media screen and (max-width: 640px) {
+      .footer__copyright {
+        left: 1vw;
+        bottom: 1vw; } }
   .footer__gnavs--left {
     display: inline-block;
     vertical-align: top;
@@ -667,10 +684,13 @@ body {
   .footer__gnavs--right {
     display: inline-block;
     vertical-align: top;
-    width: 40%;
+    width: 45%;
     font-size: 1.8vw; }
+    @media screen and (max-width: 414px) {
+      .footer__gnavs--right {
+        font-size: 1.5vw; } }
   .footer__gnavs__item {
-    padding: 0.2rem;
+    padding: 0.3vw;
     font-size: 1vw; }
 
 .contactNav {
