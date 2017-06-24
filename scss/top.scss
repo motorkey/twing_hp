@@ -459,6 +459,12 @@
         height: 60vh;
         border: 1px solid black;
       }
+      &__box {
+        margin-right: -3.6vw;
+        @include media-query(mobile) {
+          margin-right: 0;
+        }
+      }
       &__image {
         width: 100%;
         height: auto;
