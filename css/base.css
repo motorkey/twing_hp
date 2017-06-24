@@ -444,6 +444,11 @@ a.link-underline--cancel:hover {
         width: 20vw;
         height: 60vh;
         border: 1px solid black; } }
+    .topProject--reversed__right__box {
+      margin-right: -3.6vw; }
+      @media screen and (max-width: 640px) {
+        .topProject--reversed__right__box {
+          margin-right: 0; } }
     .topProject--reversed__right__image {
       width: 100%;
       height: auto; }
