@@ -29,23 +29,8 @@
     right: 0;
     left: 0;
     z-index: 1001;
-    background-color: $sub-theme-color;
-    color: $main-theme-color;
     @include media-query (mobile) {
       top: 54px;
-    }
-    .gnavs {
-      &__item {
-        @include vertical-align-center-inner;
-        height: 5vw;
-        font-size: 1.8vw;
-        border-bottom: 1px solid gray;
-        padding-left: 5vw;
-        @include media-query(mobile) {
-          height: 10vw;
-          font-size: 3vw;
-        }
-      }
     }
   }
 }
@@ -92,6 +77,21 @@
       top: 54px;
       @include media-query (mobile) {
         top: 36px;
+      }
+    }
+  }
+  &__gnavs {
+    &__item {
+      @include vertical-align-center-inner;
+      height: 5vw;
+      font-size: 1.8vw;
+      border-bottom: 1px solid gray;
+      padding-left: 5vw;
+      background-color: $sub-theme-color;
+      color: $main-theme-color;
+      @include media-query(mobile) {
+        height: 10vw;
+        font-size: 3vw;
       }
     }
   }
