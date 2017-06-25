@@ -312,7 +312,6 @@
     @include media-query(mobile) {
       margin-left: 0;
       margin-top: 0;
-      border: 1px solid black;
       width: 20vw;
       height: 60vh;
     }
@@ -393,7 +392,6 @@
     width: calc(50% - #{$top-project-negative-margin});
     @include media-query(mobile) {
       margin-left: 0;
-      border: 1px solid black;
       width: 20vw;
       height: 60vh;
       margin-top: 0;
@@ -460,7 +458,6 @@
         float: none;
         width: 20vw;
         height: 60vh;
-        border: 1px solid black;
       }
       &__box {
         margin-right: -3.6vw;
