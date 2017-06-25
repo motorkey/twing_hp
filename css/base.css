@@ -340,6 +340,9 @@ a.link-underline--cancel:hover {
     .topProject__photo__image {
       width: 100%;
       height: auto; }
+      @media screen and (max-width: 640px) {
+        .topProject__photo__image {
+          height: 60vh; } }
   .topProject__desc {
     float: left;
     width: 50%;
