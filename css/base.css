@@ -790,31 +790,31 @@ a.link-underline--cancel:hover {
 .aboutContent {
   border: 1px solid gray;
   margin: 0 5vw;
-  padding: 5vw 10vw;
   z-index: 2;
+  position: relative;
   bottom: 10vw;
   background-color: white; }
 
-.aboutUpperSection__title {
-  font-weight: bold;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1.5vw; }
-  @media screen and (max-width: 640px) {
-    .aboutUpperSection__title {
-      display: block;
-      margin-bottom: 1vw; } }
-
-.aboutUpperSection__content {
-  display: inline-block;
-  width: 80%;
-  padding-left: 5vw;
-  padding-top: 0.5vw;
-  padding-bottom: 3vw; }
-
-.aboutUpperSection__item {
-  font-size: 1.2vw;
-  padding-bottom: 0.5vw; }
+.aboutUpperSection {
+  padding: 5vw 10vw 2vw 10vw; }
+  .aboutUpperSection__title {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5vw; }
+    @media screen and (max-width: 640px) {
+      .aboutUpperSection__title {
+        display: block;
+        margin-bottom: 1vw; } }
+  .aboutUpperSection__content {
+    display: inline-block;
+    width: 80%;
+    padding-left: 5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 3vw; }
+  .aboutUpperSection__item {
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw; }
 
 .about__map {
   height: 25vw; }
