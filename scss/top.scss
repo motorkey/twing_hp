@@ -675,7 +675,7 @@
     }
     &__image {
       height: auto;
-      max-width: 100%;
+      width: 100%;
       z-index: 1;
       @include media-query(mobile) {
         width: 100%;

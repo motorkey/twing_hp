@@ -621,7 +621,7 @@ a.link-underline--cancel:hover {
       z-index: 20; }
     .topPeople__person__image {
       height: auto;
-      max-width: 100%;
+      width: 100%;
       z-index: 1; }
       @media screen and (max-width: 640px) {
         .topPeople__person__image {
