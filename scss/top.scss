@@ -390,6 +390,7 @@
     &--second {
       font-size: 1.5vw;
       margin-left: 5vw;
+      width: 90%;
       @include media-query(mobile) {
         margin-left: 0;
       }
@@ -447,6 +448,7 @@
       float: left;
       width: 50%;
       margin-top: -4vh;
+      position: relative;
       @include media-query(mobile) {
         float: right;
         width: 65vw;
@@ -461,6 +463,13 @@
       }
       &__desc {
         font-size: 1.5vw;
+      }
+    }
+    &__leftText {
+      margin-left: 5vw;
+      width: 90%;
+      @include media-query(mobile) {
+        margin-left: 0;
       }
     }
     &__right {
@@ -542,6 +551,20 @@
 
 .indent--xlg {
   padding-left: 7.8vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.indent--xxlg {
+  padding-left: 9.3vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.indent--xxxlg {
+  padding-left: 10.8vw;
   @include media-query(mobile) {
     padding-left: 0;
   }

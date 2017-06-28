@@ -398,7 +398,8 @@ a.link-underline--cancel:hover {
           margin-left: 0; } }
     .topProject__desc--second {
       font-size: 1.5vw;
-      margin-left: 5vw; }
+      margin-left: 5vw;
+      width: 90%; }
       @media screen and (max-width: 640px) {
         .topProject__desc--second {
           margin-left: 0; } }
@@ -437,7 +438,8 @@ a.link-underline--cancel:hover {
   .topProject--reversed__left {
     float: left;
     width: 50%;
-    margin-top: -4vh; }
+    margin-top: -4vh;
+    position: relative; }
     @media screen and (max-width: 640px) {
       .topProject--reversed__left {
         float: right;
@@ -446,6 +448,12 @@ a.link-underline--cancel:hover {
         margin-top: 0; } }
     .topProject--reversed__left__desc {
       font-size: 1.5vw; }
+  .topProject--reversed__leftText {
+    margin-left: 5vw;
+    width: 90%; }
+    @media screen and (max-width: 640px) {
+      .topProject--reversed__leftText {
+        margin-left: 0; } }
   .topProject--reversed__right {
     margin-left: -101px;
     margin-top: 40px;
@@ -513,6 +521,18 @@ a.link-underline--cancel:hover {
   padding-left: 7.8vw; }
   @media screen and (max-width: 640px) {
     .indent--xlg {
+      padding-left: 0; } }
+
+.indent--xxlg {
+  padding-left: 9.3vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xxlg {
+      padding-left: 0; } }
+
+.indent--xxxlg {
+  padding-left: 10.8vw; }
+  @media screen and (max-width: 640px) {
+    .indent--xxxlg {
       padding-left: 0; } }
 
 .padding--xs {
