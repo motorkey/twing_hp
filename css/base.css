@@ -141,12 +141,11 @@ a.link-underline--cancel:hover {
 .project {
   padding: 5vw 0 2vw 0; }
   .project__left {
-    border: 1px solid black;
     display: inline-block;
     width: 65%;
     height: 33vw;
     position: relative;
-    left: -3vw;
+    left: -3.7vw;
     vertical-align: top; }
   .project__photo {
     height: 100%;
@@ -235,12 +234,11 @@ a.link-underline--cancel:hover {
       width: 80%;
       margin-left: 7vw; }
   .project2__right {
-    border: 1px solid black;
     display: inline-block;
     width: 65%;
     height: 33vw;
     position: absolute;
-    right: -3.5vw;
+    right: -3.6vw;
     vertical-align: top; }
   .project2__photo {
     height: 100%;
