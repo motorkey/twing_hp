@@ -1,5 +1,5 @@
 // レスポンシブ対応のため骨組みから変えた
-.Project {
+.project {
   padding: 5vw 0 2vw 0;
   &__left {
     border: 1px solid black;
@@ -59,7 +59,7 @@
   }
 }
 
-.Project2 {
+.project2 {
   padding: 5vw 0 4vw 0;
   position: relative;
   &__inner {
@@ -123,6 +123,17 @@
   &__photo {
     height: 100%;
     width: 100%;
+  }
+}
+
+.projectText {
+  display: inline-block;
+  margin-top: 0.8vh;
+  font-size: 1.5vw;
+  @include media-query(mobile) {
+    width: inherit;
+    margin-top: 0;
+    font-size: 2.5vw;
   }
 }
 // 骨組みチェンジここまで
@@ -630,6 +641,7 @@
   }
 }
 
+// 直す
 .topProject__text__item {
   display: inline-block;
   margin-top: 0.8vh;
@@ -638,106 +650,6 @@
     width: inherit;
     margin-top: 0;
     font-size: 2.5vw;
-  }
-}
-
-.indent--none {
-}
-
-.indent--xxs {
-  padding-left: 0.5vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--xs {
-  padding-left: 1.5vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--sm {
-  padding-left: 3vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--md {
-  padding-left: 4.2vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--lg {
-  padding-left: 6.3vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--xlg {
-  padding-left: 7.8vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--xxlg {
-  padding-left: 9.3vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.indent--xxxlg {
-  padding-left: 10.8vw;
-  @include media-query(mobile) {
-    padding-left: 0;
-  }
-}
-
-.padding--xxs {
-  padding-right: 3vw;
-  @include media-query(mobile) {
-    padding-right: 0;
-  }
-}
-
-.padding--xs {
-  padding-right: 5vw;
-  @include media-query(mobile) {
-    padding-right: 0;
-  }
-}
-
-.padding--sm {
-  padding-right: 6.5vw;
-  @include media-query(mobile) {
-    padding-right: 0;
-  }
-}
-
-.padding--md {
-  padding-right: 8vw;
-  @include media-query(mobile) {
-    padding-right: 0;
-  }
-}
-.padding--lg {
-  padding-right: 10vw;
-  @include media-query(mobile) {
-    padding-right: 0;
-  }
-}
-
-.padding--xlg {
-  padding-right: 11vw;
-  @include media-query(mobile) {
-    padding-right: 0;
   }
 }
 
