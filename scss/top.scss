@@ -318,6 +318,12 @@
     &--right {
       float: right;
     }
+    &__box {
+      margin-right: -6vw;
+      @include media-query(mobile) {
+        margin-right: 0;
+      }
+    }
     &__image {
       width: 100%;
       height: auto;
@@ -355,7 +361,7 @@
       }
     }
     &__text {
-      margin-left: -7vw;
+      margin-left: -9vw;
       margin-top: -3vh;
       @include media-query(mobile) {
         margin-left: 0;
@@ -383,6 +389,10 @@
     }
     &--second {
       font-size: 1.5vw;
+      margin-left: 5vw;
+      @include media-query(mobile) {
+        margin-left: 0;
+      }
     }
   }
   &__left {
@@ -395,6 +405,12 @@
       width: 20vw;
       height: 60vh;
       margin-top: 0;
+    }
+    &__box {
+      margin-right: -6vw;
+      @include media-query(mobile) {
+        margin-right: 0;
+      }
     }
     &__image {
       width: 100%;
@@ -461,7 +477,9 @@
       }
       &__box {
         margin-right: -3.6vw;
+        margin-left: -6vw;
         @include media-query(mobile) {
+          margin-right: 0;
           margin-right: 0;
         }
       }
