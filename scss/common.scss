@@ -68,3 +68,101 @@ a.link-underline--cancel:hover {
 .nav-tabs {
   text-align:center;
 }
+
+.topProjectIndentXxs {
+  padding-left: 0.5vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentXs {
+  padding-left: 1.5vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentSm {
+  padding-left: 3vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentMd {
+  padding-left: 4.2vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentLg {
+  padding-left: 6.3vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentXlg {
+  padding-left: 7.8vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentXxlg {
+  padding-left: 9.3vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+.topProjectIndentXxxlg {
+  padding-left: 10.8vw;
+  @include media-query(mobile) {
+    padding-left: 0;
+  }
+}
+
+
+.topProjectPaddingXxs {
+  padding-right: 3vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.topProjectPaddingXs {
+  padding-right: 5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.topProjectPaddingSm {
+  padding-right: 6.5vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.topProjectPaddingMd {
+  padding-right: 8vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+.topProjectPaddingLg {
+  padding-right: 10vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
+
+.topProjectPaddingXlg {
+  padding-right: 11vw;
+  @include media-query(mobile) {
+    padding-right: 0;
+  }
+}
