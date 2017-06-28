@@ -2,12 +2,11 @@
 .project {
   padding: 5vw 0 2vw 0;
   &__left {
-    border: 1px solid black;
     display: inline-block;
     width: 65%;
     height: 33vw;
     position: relative;
-    left: -3vw;
+    left: -3.7vw;
     vertical-align: top;
   }
   &__photo {
@@ -112,12 +111,11 @@
     }
   }
   &__right {
-    border: 1px solid black;
     display: inline-block;
     width: 65%;
     height: 33vw;
     position: absolute;
-    right: -3.5vw;
+    right: -3.6vw;
     vertical-align: top;
   }
   &__photo {
