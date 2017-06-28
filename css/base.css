@@ -783,7 +783,7 @@ a.link-underline--cancel:hover {
   .contact__title--sp {
     font-size: 5vw; } }
 
-.about__UpperImage {
+.UpperImage {
   width: 100vw;
   z-index: 1; }
 
@@ -816,5 +816,5 @@ a.link-underline--cancel:hover {
     font-size: 1.2vw;
     padding-bottom: 0.5vw; }
 
-.about__map {
+.aboutLowerSection__gmap {
   height: 25vw; }

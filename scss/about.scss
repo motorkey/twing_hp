@@ -1,8 +1,4 @@
-.aboutPage {
-
-}
-
-.about__UpperImage {
+.UpperImage {
   width: 100vw;
   z-index: 1;
 }
@@ -41,8 +37,7 @@
 }
 
 .aboutLowerSection {
-}
-
-.about__map {
-  height: 25vw;
+  &__gmap {
+    height: 25vw;
+  }
 }
