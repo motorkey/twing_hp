@@ -1,3 +1,133 @@
+// レスポンシブ対応のため骨組みから変えた
+.Project {
+  padding: 5vw 0 2vw 0;
+  &__left {
+    border: 1px solid black;
+    display: inline-block;
+    width: 65%;
+    height: 33vw;
+    position: relative;
+    left: -3vw;
+    vertical-align: top;
+  }
+  &__photo {
+    height: 100%;
+    width: 100%;
+  }
+  &__right{
+    border: 1px solid black;
+    width: 50%;
+    height: 25vw;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 10vw;
+    &__upper {
+      border: 1px solid gray;
+      height: 30%;
+      width: 100%;
+      position: relative;
+    }
+    &__num {
+      border: 1px solid gray;
+      height: 100%;
+      width: 20%;
+      display: inline-block;
+      font-size: 12vw;
+      color: rgba(102,113,171,1);
+      position: relative;
+      vertical-align: top;
+      &--BigBlue {
+        position: absolute;
+        top: -8vw;
+      }
+    }
+    &__title {
+      border: 1px solid gray;
+      height: 80%;
+      width: 65%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 3vw;
+    }
+    &__lower {
+      border: 1px solid gray;
+      height: 60%;
+      width: 100%;
+      margin-left: 5vw;
+    }
+  }
+}
+
+.Project2 {
+  padding: 5vw 0 4vw 0;
+  position: relative;
+  &__inner {
+    position: relative;
+  }
+  &__left {
+    border: 1px solid black;
+    width: 60%;
+    height: 30vw;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 0;
+    text-align: right;
+    z-index: 2;
+    &__upper {
+      border: 1px solid gray;
+      height: 30%;
+      width: 100%;
+      position: relative;
+    }
+    &__num {
+      border: 1px solid gray;
+      height: 100%;
+      width: 20%;
+      display: inline-block;
+      font-size: 12vw;
+      color: rgba(112,179,211,1);
+      position: relative;
+      vertical-align: top;
+      &--BigBlue {
+        position: absolute;
+        top: -8vw;
+        left: 3vw;
+      }
+    }
+    &__title {
+      border: 1px solid gray;
+      height: 80%;
+      width: 65%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 3vw;
+    }
+    &__lower {
+      border: 1px solid gray;
+      height: 80%;
+      width: 80%;
+      margin-left: 7vw;
+    }
+  }
+  &__right {
+    border: 1px solid black;
+    display: inline-block;
+    width: 65%;
+    height: 33vw;
+    position: absolute;
+    right: -3.5vw;
+    vertical-align: top;
+  }
+  &__photo {
+    height: 100%;
+    width: 100%;
+  }
+}
+// 骨組みチェンジここまで
+
+
 .topHeader {
   height: 90px;
   z-index: 1;
@@ -567,6 +697,13 @@
   padding-left: 10.8vw;
   @include media-query(mobile) {
     padding-left: 0;
+  }
+}
+
+.padding--xxs {
+  padding-right: 3vw;
+  @include media-query(mobile) {
+    padding-right: 0;
   }
 }
 

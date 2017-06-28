@@ -54,6 +54,114 @@ a.link-underline--cancel:hover {
 .nav-tabs {
   text-align: center; }
 
+.Project {
+  padding: 5vw 0 2vw 0; }
+  .Project__left {
+    border: 1px solid black;
+    display: inline-block;
+    width: 65%;
+    height: 33vw;
+    position: relative;
+    left: -3vw;
+    vertical-align: top; }
+  .Project__photo {
+    height: 100%;
+    width: 100%; }
+  .Project__right {
+    border: 1px solid black;
+    width: 50%;
+    height: 25vw;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 10vw; }
+    .Project__right__upper {
+      border: 1px solid gray;
+      height: 30%;
+      width: 100%;
+      position: relative; }
+    .Project__right__num {
+      border: 1px solid gray;
+      height: 100%;
+      width: 20%;
+      display: inline-block;
+      font-size: 12vw;
+      color: #6671ab;
+      position: relative;
+      vertical-align: top; }
+      .Project__right__num--BigBlue {
+        position: absolute;
+        top: -8vw; }
+    .Project__right__title {
+      border: 1px solid gray;
+      height: 80%;
+      width: 65%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 3vw; }
+    .Project__right__lower {
+      border: 1px solid gray;
+      height: 60%;
+      width: 100%;
+      margin-left: 5vw; }
+
+.Project2 {
+  padding: 5vw 0 4vw 0;
+  position: relative; }
+  .Project2__inner {
+    position: relative; }
+  .Project2__left {
+    border: 1px solid black;
+    width: 60%;
+    height: 30vw;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 0;
+    text-align: right;
+    z-index: 2; }
+    .Project2__left__upper {
+      border: 1px solid gray;
+      height: 30%;
+      width: 100%;
+      position: relative; }
+    .Project2__left__num {
+      border: 1px solid gray;
+      height: 100%;
+      width: 20%;
+      display: inline-block;
+      font-size: 12vw;
+      color: #70b3d3;
+      position: relative;
+      vertical-align: top; }
+      .Project2__left__num--BigBlue {
+        position: absolute;
+        top: -8vw;
+        left: 3vw; }
+    .Project2__left__title {
+      border: 1px solid gray;
+      height: 80%;
+      width: 65%;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 3vw; }
+    .Project2__left__lower {
+      border: 1px solid gray;
+      height: 80%;
+      width: 80%;
+      margin-left: 7vw; }
+  .Project2__right {
+    border: 1px solid black;
+    display: inline-block;
+    width: 65%;
+    height: 33vw;
+    position: absolute;
+    right: -3.5vw;
+    vertical-align: top; }
+  .Project2__photo {
+    height: 100%;
+    width: 100%; }
+
 .topHeader {
   height: 90px;
   z-index: 1; }
@@ -534,6 +642,12 @@ a.link-underline--cancel:hover {
   @media screen and (max-width: 640px) {
     .indent--xxxlg {
       padding-left: 0; } }
+
+.padding--xxs {
+  padding-right: 3vw; }
+  @media screen and (max-width: 640px) {
+    .padding--xxs {
+      padding-right: 0; } }
 
 .padding--xs {
   padding-right: 5vw; }
