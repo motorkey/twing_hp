@@ -336,6 +336,11 @@ a.link-underline--cancel:hover {
         height: 60vh; } }
     .topProject__photo--right {
       float: right; }
+    .topProject__photo__box {
+      margin-right: -6vw; }
+      @media screen and (max-width: 640px) {
+        .topProject__photo__box {
+          margin-right: 0; } }
     .topProject__photo__image {
       width: 100%;
       height: auto; }
@@ -368,7 +373,7 @@ a.link-underline--cancel:hover {
           text-align: left;
           margin-top: 0; } }
     .topProject__desc__text {
-      margin-left: -7vw;
+      margin-left: -9vw;
       margin-top: -3vh; }
       @media screen and (max-width: 640px) {
         .topProject__desc__text {
@@ -392,7 +397,11 @@ a.link-underline--cancel:hover {
         .topProject__desc--eyecatch-size {
           margin-left: 0; } }
     .topProject__desc--second {
-      font-size: 1.5vw; }
+      font-size: 1.5vw;
+      margin-left: 5vw; }
+      @media screen and (max-width: 640px) {
+        .topProject__desc--second {
+          margin-left: 0; } }
   .topProject__left {
     margin-left: -101px;
     margin-top: 40px;
@@ -404,6 +413,11 @@ a.link-underline--cancel:hover {
         width: 20vw;
         height: 60vh;
         margin-top: 0; } }
+    .topProject__left__box {
+      margin-right: -6vw; }
+      @media screen and (max-width: 640px) {
+        .topProject__left__box {
+          margin-right: 0; } }
     .topProject__left__image {
       width: 100%;
       height: auto; }
@@ -445,9 +459,11 @@ a.link-underline--cancel:hover {
         width: 20vw;
         height: 60vh; } }
     .topProject--reversed__right__box {
-      margin-right: -3.6vw; }
+      margin-right: -3.6vw;
+      margin-left: -6vw; }
       @media screen and (max-width: 640px) {
         .topProject--reversed__right__box {
+          margin-right: 0;
           margin-right: 0; } }
     .topProject--reversed__right__image {
       width: 100%;
