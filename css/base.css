@@ -269,6 +269,9 @@ a.link-underline--cancel {
       @media screen and (max-width: 640px) {
         .project2__left__upper {
           left: -15vw; } }
+      @media screen and (max-width: 640px) {
+        .project2__left__upper--2nd {
+          left: -12vw; } }
     .project2__left__num {
       height: 100%;
       width: 5%;
