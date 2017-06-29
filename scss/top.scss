@@ -2,7 +2,7 @@
 .project {
   padding: 5vw 0 2vw 0;
   @include media-query(mobile) {
-    height: 60vh;
+    height: 60vw;
     padding: 1vw 0 1vw 0;
   }
   &__left {
@@ -206,6 +206,7 @@
     width: 100%;
     @include media-query(mobile) {
       width: 20vw;
+      height: 60vw;
     }
   }
 }
@@ -216,6 +217,9 @@
   }
   @include media-query(mobile) {
     padding-bottom: 1vw;
+  }
+  @media screen and (max-width: 350px) {
+    padding-bottom: 5vw;
   }
 }
 
