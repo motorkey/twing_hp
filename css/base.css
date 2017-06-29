@@ -140,6 +140,9 @@ a.link-underline--cancel:hover {
 
 .project {
   padding: 5vw 0 2vw 0; }
+  @media screen and (max-width: 640px) {
+    .project {
+      height: 60vh; } }
   .project__left {
     display: inline-block;
     width: 65%;
@@ -147,9 +150,17 @@ a.link-underline--cancel:hover {
     position: relative;
     left: -3.7vw;
     vertical-align: top; }
+    @media screen and (max-width: 640px) {
+      .project__left {
+        height: 60vh;
+        width: 20vw;
+        position: static; } }
   .project__photo {
     height: 100%;
     width: 100%; }
+    @media screen and (max-width: 640px) {
+      .project__photo {
+        height: 60vh; } }
   .project__right {
     width: 50%;
     height: 25vw;
@@ -157,6 +168,12 @@ a.link-underline--cancel:hover {
     vertical-align: top;
     position: absolute;
     right: 10vw; }
+    @media screen and (max-width: 640px) {
+      .project__right {
+        width: 60%;
+        position: static;
+        padding-left: 7vw;
+        padding-top: 5vw; } }
     .project__right__upper {
       height: 30%;
       width: 100%;
@@ -173,14 +190,26 @@ a.link-underline--cancel:hover {
         position: absolute;
         top: -8vw;
         left: -3vw; }
+        @media screen and (max-width: 640px) {
+          .project__right__num--BigBlue {
+            left: -2vw; } }
+        @media screen and (max-width: 640px) {
+          .project__right__num--BigBlue--3rd {
+            left: 0; } }
     .project__right__title {
       width: 65%;
       display: inline-block;
       vertical-align: bottom;
       font-size: 3vw;
       margin-bottom: 1.5vw; }
+      @media screen and (max-width: 640px) {
+        .project__right__title {
+          margin-left: 1vw; } }
       .project__right__title--3rd {
         margin-left: 1vw; }
+        @media screen and (max-width: 640px) {
+          .project__right__title--3rd {
+            margin-left: 5vw; } }
     .project__right__titleBorder {
       border-top: 2px solid gray;
       margin-left: 6%;
@@ -193,15 +222,25 @@ a.link-underline--cancel:hover {
       width: 100%;
       margin-left: 3vw;
       padding-top: 2vw; }
+      @media screen and (max-width: 640px) {
+        .project__right__lower {
+          margin-left: 0; } }
       .project__right__lower--3rd {
         margin-left: 4vw; }
         @media screen and (max-width: 900px) {
           .project__right__lower--3rd {
             width: 105%; } }
+        @media screen and (max-width: 640px) {
+          .project__right__lower--3rd {
+            margin-left: 0; } }
 
 .project2 {
   padding: 5vw 0 4vw 0;
   position: relative; }
+  @media screen and (max-width: 640px) {
+    .project2 {
+      position: static;
+      height: 60vh; } }
   .project2__inner {
     position: relative; }
   .project2__left {
@@ -213,10 +252,18 @@ a.link-underline--cancel:hover {
     padding-left: 0;
     text-align: right;
     z-index: 2; }
+    @media screen and (max-width: 640px) {
+      .project2__left {
+        position: absolute;
+        left: 20vw;
+        padding-top: 5vw; } }
     .project2__left__upper {
       height: 25%;
       width: 100%;
       position: relative; }
+      @media screen and (max-width: 640px) {
+        .project2__left__upper {
+          left: -15vw; } }
     .project2__left__num {
       height: 100%;
       width: 5%;
@@ -236,6 +283,9 @@ a.link-underline--cancel:hover {
       text-align: left;
       margin-top: 2vw;
       margin-right: 8vw; }
+      @media screen and (max-width: 640px) {
+        .project2__left__title--4th {
+          margin-right: 4vw; } }
     .project2__left__lower {
       height: 80%;
       width: 100%;
@@ -248,9 +298,18 @@ a.link-underline--cancel:hover {
     position: absolute;
     right: -3.6vw;
     vertical-align: top; }
+    @media screen and (max-width: 640px) {
+      .project2__right {
+        position: absolute;
+        left: 0;
+        width: 20vw;
+        height: 60vh; } }
   .project2__photo {
     height: 100%;
     width: 100%; }
+    @media screen and (max-width: 640px) {
+      .project2__photo {
+        width: 20vw; } }
 
 @media screen and (max-width: 760px) {
   .project3 {
