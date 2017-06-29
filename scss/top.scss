@@ -3,6 +3,7 @@
   padding: 5vw 0 2vw 0;
   @include media-query(mobile) {
     height: 60vh;
+    padding: 1vw 0 1vw 0;
   }
   &__left {
     display: inline-block;
@@ -21,7 +22,7 @@
     height: 100%;
     width: 100%;
     @include media-query(mobile) {
-      height: 60vh;
+      height: 60vw;
     }
   }
   &__right{
@@ -110,12 +111,19 @@
   }
 }
 
+.project1 {
+  @include media-query(mobile) {
+    padding-top: 5vw;
+  }
+}
+
 .project2 {
   padding: 5vw 0 4vw 0;
   position: relative;
   @include media-query(mobile) {
     position: static;
-    height: 60vh;
+    height: 60vw;
+    padding: 1vw 0 1vw 0;
   }
   &__inner {
     position: relative;
@@ -205,6 +213,9 @@
 .project3 {
   @media screen and (max-width: 760px) {
     padding-bottom: 4vw;
+  }
+  @include media-query(mobile) {
+    padding-bottom: 1vw;
   }
 }
 
