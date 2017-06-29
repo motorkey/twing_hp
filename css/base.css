@@ -35,10 +35,9 @@ body {
 a.link-underline--cancel {
   text-decoration: none;
   color: inherit; }
-
-a.link-underline--cancel:hover {
-  text-decoration: none;
-  color: gray; }
+  a.link-underline--cancel:hover {
+    text-decoration: none;
+    color: gray; }
 
 .nav > li > a {
   text-decoration: none; }
@@ -427,6 +426,8 @@ a.link-underline--cancel:hover {
       .hamburger__gnavs__item {
         height: 10vw;
         font-size: 3vw; } }
+    .hamburger__gnavs__item:hover {
+      background-color: gray; }
 
 .line--top--toCloseBtn {
   top: 38px;

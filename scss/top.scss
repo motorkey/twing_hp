@@ -331,6 +331,9 @@
         height: 10vw;
         font-size: 3vw;
       }
+      &:hover {
+        background-color: gray;
+      }
     }
   }
 }

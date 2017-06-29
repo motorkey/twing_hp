@@ -48,10 +48,10 @@ body {
 a.link-underline--cancel {
   text-decoration: none;
   color: inherit;
-}
-a.link-underline--cancel:hover {
-  text-decoration: none;
-  color: gray;
+  &:hover {
+    text-decoration: none;
+    color: gray;
+  }
 }
 
 
