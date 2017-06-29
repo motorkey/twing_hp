@@ -142,7 +142,8 @@ a.link-underline--cancel:hover {
   padding: 5vw 0 2vw 0; }
   @media screen and (max-width: 640px) {
     .project {
-      height: 60vh; } }
+      height: 60vh;
+      padding: 1vw 0 1vw 0; } }
   .project__left {
     display: inline-block;
     width: 65%;
@@ -160,7 +161,7 @@ a.link-underline--cancel:hover {
     width: 100%; }
     @media screen and (max-width: 640px) {
       .project__photo {
-        height: 60vh; } }
+        height: 60vw; } }
   .project__right {
     width: 50%;
     height: 25vw;
@@ -234,13 +235,18 @@ a.link-underline--cancel:hover {
           .project__right__lower--3rd {
             margin-left: 0; } }
 
+@media screen and (max-width: 640px) {
+  .project1 {
+    padding-top: 5vw; } }
+
 .project2 {
   padding: 5vw 0 4vw 0;
   position: relative; }
   @media screen and (max-width: 640px) {
     .project2 {
       position: static;
-      height: 60vh; } }
+      height: 60vw;
+      padding: 1vw 0 1vw 0; } }
   .project2__inner {
     position: relative; }
   .project2__left {
@@ -314,6 +320,10 @@ a.link-underline--cancel:hover {
 @media screen and (max-width: 760px) {
   .project3 {
     padding-bottom: 4vw; } }
+
+@media screen and (max-width: 640px) {
+  .project3 {
+    padding-bottom: 1vw; } }
 
 .projectText {
   display: inline-block;
