@@ -9,7 +9,7 @@
     width: 65%;
     height: 33vw;
     position: relative;
-    left: -3.7vw;
+    left: -4vw;
     vertical-align: top;
     @include media-query(mobile) {
       height: 60vh;
@@ -41,9 +41,6 @@
       height: 30%;
       width: 100%;
       position: relative;
-      // @include media-query(mobile) {
-      //   padding-left: 1vw;
-      // }
     }
     &__num {
       height: 100%;
@@ -53,9 +50,6 @@
       color: rgba(102,113,171,1);
       position: relative;
       vertical-align: top;
-      // @include media-query(mobile) {
-      //   padding-left: 1vw;
-      // }
       &--BigBlue {
         position: absolute;
         top: -8vw;
@@ -163,11 +157,6 @@
         position: absolute;
         top: -8vw;
         left: -5vw;
-        // &--4th {
-        //   @include media-query(mobile) {
-        //     left: -1vw;
-        //   }
-        // }
       }
     }
     &__title {
@@ -195,7 +184,7 @@
     width: 65%;
     height: 33vw;
     position: absolute;
-    right: -3.6vw;
+    right: -3.9vw;
     vertical-align: top;
     @include media-query(mobile) {
       position: absolute;
@@ -532,219 +521,208 @@
   }
 }
 
-.topProject {
-  padding: $top-project-padding 0 0 $top-project-padding-left;
-  @include media-query(mobile) {
-    padding-left: 0;
-    padding-top: 10px;
-  }
-  &__photo {
-    float: left;
-    margin-left: $top-project-negative-margin;
-    margin-top: 40px;
-    width: calc(50% - #{$top-project-negative-margin});
-    @include media-query(mobile) {
-      margin-left: 0;
-      margin-top: 0;
-      width: 20vw;
-      height: 60vh;
-    }
-    &--right {
-      float: right;
-    }
-    &__box {
-      margin-right: -6vw;
-      @include media-query(mobile) {
-        margin-right: 0;
-      }
-    }
-    &__image {
-      width: 100%;
-      height: auto;
-      @include media-query(mobile) {
-        height: 60vh;
-      }
-    }
-  }
-  &__desc {
-    float: left;
-    width: 50%;
-    margin-top: -5vh;
-    @include media-query(mobile) {
-      width: 65vw;
-      padding-left: 8vw;
-      margin-top: 0;
-    }
-    &--left {
-      float: left;
-    }
-    &__title--odd {
-      margin-left: -15vw;
-      margin-top: -2vh;
-      @include media-query(mobile) {
-        margin-left: 0;
-        margin-top: 0;
-      }
-    }
-    &__title--even {
-      text-align: right;
-      margin-top: -5vh;
-      @include media-query(mobile) {
-        text-align: left;
-        margin-top: 0;
-      }
-    }
-    &__text {
-      margin-left: -9vw;
-      margin-top: -3vh;
-      @include media-query(mobile) {
-        margin-left: 0;
-        margin-top: 0;
-      }
-    }
-    &--numberBigBlue {
-      font-size: 12vw;
-      color: rgba(102,113,171,1);
-      display: inline-block;
-      width: 6vw;
-      @include media-query(mobile) {
-        font-size: 14vw;
-        color: rgba(102,113,171,1);
-        width: inherit;
-      }
-    }
-    &--eyecatch-size {
-      font-size: 3vw;
-      display: inline-block;
-      margin-left: 1vw;
-      @include media-query(mobile) {
-        margin-left: 0;
-      }
-    }
-    &--second {
-      font-size: 1.5vw;
-      margin-left: 5vw;
-      width: 90%;
-      @include media-query(mobile) {
-        margin-left: 0;
-      }
-    }
-  }
-  &__left {
-    margin-left: $top-project-negative-margin;
-    margin-top: 40px;
-    float: left;
-    width: calc(50% - #{$top-project-negative-margin});
-    @include media-query(mobile) {
-      margin-left: 0;
-      width: 20vw;
-      height: 60vh;
-      margin-top: 0;
-    }
-    &__box {
-      margin-right: -6vw;
-      @include media-query(mobile) {
-        margin-right: 0;
-      }
-    }
-    &__image {
-      width: 100%;
-      height: auto;
-    }
-  }
-  &__right {
-    float: right;
-    width: 50%;
-    margin-top: -5vh;
-    @include media-query(mobile) {
-      transform: none;
-      float: left;
-      width: 65vw;
-      padding-left: 8vw;
-      margin-top: 0;
-    }
-    &__number {
-      transform: skewX(- 30deg);
-    }
-    &__title {
+// .topProject {
+//   padding: $top-project-padding 0 0 $top-project-padding-left;
+//   @include media-query(mobile) {
+//     padding-left: 0;
+//     padding-top: 10px;
+//   }
+//   &__photo {
+//     float: left;
+//     margin-left: $top-project-negative-margin;
+//     margin-top: 40px;
+//     width: calc(50% - #{$top-project-negative-margin});
+//     @include media-query(mobile) {
+//       margin-left: 0;
+//       margin-top: 0;
+//       width: 20vw;
+//       height: 60vh;
+//     }
+//     &--right {
+//       float: right;
+//     }
+//     &__box {
+//       margin-right: -6vw;
+//       @include media-query(mobile) {
+//         margin-right: 0;
+//       }
+//     }
+//     &__image {
+//       width: 100%;
+//       height: auto;
+//       @include media-query(mobile) {
+//         height: 60vh;
+//       }
+//     }
+//   }
+//   &__desc {
+//     float: left;
+//     width: 50%;
+//     margin-top: -5vh;
+//     @include media-query(mobile) {
+//       width: 65vw;
+//       padding-left: 8vw;
+//       margin-top: 0;
+//     }
+//     &--left {
+//       float: left;
+//     }
+//     &__title--odd {
+//       margin-left: -15vw;
+//       margin-top: -2vh;
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//         margin-top: 0;
+//       }
+//     }
+//     &__title--even {
+//       text-align: right;
+//       margin-top: -5vh;
+//       @include media-query(mobile) {
+//         text-align: left;
+//         margin-top: 0;
+//       }
+//     }
+//     &__text {
+//       margin-left: -9vw;
+//       margin-top: -3vh;
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//         margin-top: 0;
+//       }
+//     }
+//     &--numberBigBlue {
+//       font-size: 12vw;
+//       color: rgba(102,113,171,1);
+//       display: inline-block;
+//       width: 6vw;
+//       @include media-query(mobile) {
+//         font-size: 14vw;
+//         color: rgba(102,113,171,1);
+//         width: inherit;
+//       }
+//     }
+//     &--eyecatch-size {
+//       font-size: 3vw;
+//       display: inline-block;
+//       margin-left: 1vw;
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//       }
+//     }
+//     &--second {
+//       font-size: 1.5vw;
+//       margin-left: 5vw;
+//       width: 90%;
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//       }
+//     }
+//   }
+//   &__left {
+//     margin-left: $top-project-negative-margin;
+//     margin-top: 40px;
+//     float: left;
+//     width: calc(50% - #{$top-project-negative-margin});
+//     @include media-query(mobile) {
+//       margin-left: 0;
+//       width: 20vw;
+//       height: 60vh;
+//       margin-top: 0;
+//     }
+//     &__box {
+//       margin-right: -6vw;
+//       @include media-query(mobile) {
+//         margin-right: 0;
+//       }
+//     }
+//     &__image {
+//       width: 100%;
+//       height: auto;
+//     }
+//   }
+//   &__right {
+//     float: right;
+//     width: 50%;
+//     margin-top: -5vh;
+//     @include media-query(mobile) {
+//       transform: none;
+//       float: left;
+//       width: 65vw;
+//       padding-left: 8vw;
+//       margin-top: 0;
+//     }
+//     &__number {
+//       transform: skewX(- 30deg);
+//     }
+//     &__title {
+//
+//     }
+//     &__desc {
+//
+//       &__inner {
+//         //display: inline-block;
+//         //transform: skewX(- 30deg);
+//       }
+//     }
+//   }
+//   &--reversed {
+//     &__left {
+//       float: left;
+//       width: 50%;
+//       margin-top: -4vh;
+//       position: relative;
+//       @include media-query(mobile) {
+//         float: right;
+//         width: 65vw;
+//         margin-right: 3vw; // 暫定
+//         margin-top: 0;
+//       }
+//       &__number {
+//
+//       }
+//       &__title {
+//
+//       }
+//       &__desc {
+//         font-size: 1.5vw;
+//       }
+//     }
+//     &__leftText {
+//       margin-left: 5vw;
+//       width: 90%;
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//       }
+//     }
+//     &__right {
+//       margin-left: $top-project-negative-margin;
+//       margin-top: 40px;
+//       float: left;
+//       width: calc(50% - #{$top-project-negative-margin});
+//       @include media-query(mobile) {
+//         margin-left: 0;
+//         margin-top: 0;
+//         float: none;
+//         width: 20vw;
+//         height: 60vh;
+//       }
+//       &__box {
+//         margin-right: -3.6vw;
+//         margin-left: -6vw;
+//         @include media-query(mobile) {
+//           margin-right: 0;
+//           margin-right: 0;
+//         }
+//       }
+//       &__image {
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+//   }
+// }
 
-    }
-    &__desc {
-
-      &__inner {
-        //display: inline-block;
-        //transform: skewX(- 30deg);
-      }
-    }
-  }
-  &--reversed {
-    &__left {
-      float: left;
-      width: 50%;
-      margin-top: -4vh;
-      position: relative;
-      @include media-query(mobile) {
-        float: right;
-        width: 65vw;
-        margin-right: 3vw; // 暫定
-        margin-top: 0;
-      }
-      &__number {
-
-      }
-      &__title {
-
-      }
-      &__desc {
-        font-size: 1.5vw;
-      }
-    }
-    &__leftText {
-      margin-left: 5vw;
-      width: 90%;
-      @include media-query(mobile) {
-        margin-left: 0;
-      }
-    }
-    &__right {
-      margin-left: $top-project-negative-margin;
-      margin-top: 40px;
-      float: left;
-      width: calc(50% - #{$top-project-negative-margin});
-      @include media-query(mobile) {
-        margin-left: 0;
-        margin-top: 0;
-        float: none;
-        width: 20vw;
-        height: 60vh;
-      }
-      &__box {
-        margin-right: -3.6vw;
-        margin-left: -6vw;
-        @include media-query(mobile) {
-          margin-right: 0;
-          margin-right: 0;
-        }
-      }
-      &__image {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
-
-// 直す
-.topProject__text__item {
-  display: inline-block;
-  margin-top: 0.8vh;
-  font-size: 1.5vw;
-  @include media-query(mobile) {
-    width: inherit;
-    margin-top: 0;
-    font-size: 2.5vw;
-  }
-}
 
 .topNews {
   padding: 25px 5vw 60px 5vw;
