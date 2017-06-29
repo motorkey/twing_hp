@@ -1,6 +1,9 @@
 // レスポンシブ対応のため骨組みから変えた
 .project {
   padding: 5vw 0 2vw 0;
+  @include media-query(mobile) {
+    height: 60vh;
+  }
   &__left {
     display: inline-block;
     width: 65%;
@@ -8,10 +11,18 @@
     position: relative;
     left: -3.7vw;
     vertical-align: top;
+    @include media-query(mobile) {
+      height: 60vh;
+      width: 20vw;
+      position: static
+    }
   }
   &__photo {
     height: 100%;
     width: 100%;
+    @include media-query(mobile) {
+      height: 60vh;
+    }
   }
   &__right{
     width: 50%;
@@ -20,10 +31,19 @@
     vertical-align: top;
     position: absolute;
     right: 10vw;
+    @include media-query(mobile) {
+      width: 60%;
+      position: static;
+      padding-left: 7vw;
+      padding-top: 5vw;
+    }
     &__upper {
       height: 30%;
       width: 100%;
       position: relative;
+      // @include media-query(mobile) {
+      //   padding-left: 1vw;
+      // }
     }
     &__num {
       height: 100%;
@@ -33,10 +53,21 @@
       color: rgba(102,113,171,1);
       position: relative;
       vertical-align: top;
+      // @include media-query(mobile) {
+      //   padding-left: 1vw;
+      // }
       &--BigBlue {
         position: absolute;
         top: -8vw;
         left: -3vw;
+        @include media-query(mobile) {
+          left: -2vw;
+        }
+        &--3rd {
+          @include media-query(mobile) {
+            left: 0;
+          }
+        }
       }
     }
     &__title {
@@ -45,8 +76,14 @@
       vertical-align: bottom;
       font-size: 3vw;
       margin-bottom: 1.5vw;
+      @include media-query(mobile) {
+        margin-left: 1vw;
+      }
       &--3rd {
         margin-left: 1vw;
+        @include media-query(mobile) {
+          margin-left: 5vw;
+        }
       }
     }
     &__titleBorder {
@@ -63,10 +100,16 @@
       width: 100%;
       margin-left: 3vw;
       padding-top: 2vw;
+      @include media-query(mobile) {
+        margin-left: 0;
+      }
       &--3rd {
         margin-left: 4vw;
         @media screen and (max-width: 900px) {
           width: 105%;
+        }
+        @include media-query(mobile) {
+          margin-left: 0;
         }
       }
     }
@@ -76,8 +119,15 @@
 .project2 {
   padding: 5vw 0 4vw 0;
   position: relative;
+  @include media-query(mobile) {
+    position: static;
+    height: 60vh;
+  }
   &__inner {
     position: relative;
+    @include media-query(mobile) {
+
+    }
   }
   &__left {
     width: 60%;
@@ -88,10 +138,18 @@
     padding-left: 0;
     text-align: right;
     z-index: 2;
+    @include media-query(mobile) {
+      position: absolute;
+      left: 20vw;
+      padding-top: 5vw;
+    }
     &__upper {
       height: 25%;
       width: 100%;
       position: relative;
+      @include media-query(mobile) {
+        left: -15vw;
+      }
     }
     &__num {
       height: 100%;
@@ -105,6 +163,11 @@
         position: absolute;
         top: -8vw;
         left: -5vw;
+        // &--4th {
+        //   @include media-query(mobile) {
+        //     left: -1vw;
+        //   }
+        // }
       }
     }
     &__title {
@@ -114,6 +177,11 @@
       text-align: left;
       margin-top: 2vw;
       margin-right: 8vw;
+      &--4th {
+        @include media-query(mobile) {
+          margin-right: 4vw;
+        }
+      }
     }
     &__lower {
       height: 80%;
@@ -129,10 +197,19 @@
     position: absolute;
     right: -3.6vw;
     vertical-align: top;
+    @include media-query(mobile) {
+      position: absolute;
+      left: 0;
+      width: 20vw;
+      height: 60vh;
+    }
   }
   &__photo {
     height: 100%;
     width: 100%;
+    @include media-query(mobile) {
+      width: 20vw;
+    }
   }
 }
 
