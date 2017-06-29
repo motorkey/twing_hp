@@ -142,7 +142,7 @@ a.link-underline--cancel:hover {
   padding: 5vw 0 2vw 0; }
   @media screen and (max-width: 640px) {
     .project {
-      height: 60vh;
+      height: 60vw;
       padding: 1vw 0 1vw 0; } }
   .project__left {
     display: inline-block;
@@ -315,7 +315,8 @@ a.link-underline--cancel:hover {
     width: 100%; }
     @media screen and (max-width: 640px) {
       .project2__photo {
-        width: 20vw; } }
+        width: 20vw;
+        height: 60vw; } }
 
 @media screen and (max-width: 760px) {
   .project3 {
@@ -324,6 +325,10 @@ a.link-underline--cancel:hover {
 @media screen and (max-width: 640px) {
   .project3 {
     padding-bottom: 1vw; } }
+
+@media screen and (max-width: 350px) {
+  .project3 {
+    padding-bottom: 5vw; } }
 
 .projectText {
   display: inline-block;
